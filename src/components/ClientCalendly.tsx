@@ -3,12 +3,28 @@
 import { useEffect } from 'react';
 import Script from 'next/script';
 
+interface CalendlyWindow extends Window {
+  Calendly?: {
+    initInlineWidget: (config: {
+      url: string;
+      parentElement: HTMLElement | null;
+    }) => void;
+  };
+}
+
+declare global {
+  interface WindowEventMap {
+    'calendly-script-loaded': CustomEvent;
+  }
+}
+
 export default function ClientCalendly() {
   useEffect(() => {
     // Initialize Calendly widget after script loads
     const initCalendly = () => {
-      if ((window as any).Calendly) {
-        (window as any).Calendly.initInlineWidget({
+      const calendlyWindow = window as CalendlyWindow;
+      if (calendlyWindow.Calendly) {
+        calendlyWindow.Calendly.initInlineWidget({
           url: 'https://calendly.com/mcasmakeen/30min',
           parentElement: document.getElementById('calendly-inline-widget'),
         });
@@ -16,7 +32,8 @@ export default function ClientCalendly() {
     };
 
     // Check if Calendly is already loaded
-    if ((window as any).Calendly) {
+    const calendlyWindow = window as CalendlyWindow;
+    if (calendlyWindow.Calendly) {
       initCalendly();
     } else {
       // If not loaded, wait for script to load

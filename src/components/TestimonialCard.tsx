@@ -13,7 +13,7 @@ export default function TestimonialCard({ quote, name, title, imageUrl }: Testim
       <div className="space-y-6">
         {/* Quote */}
         <p className="text-gray-600 leading-relaxed">
-          "{quote}"
+          &ldquo;{quote}&rdquo;
         </p>
 
         {/* Client Info */}

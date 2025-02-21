@@ -610,6 +610,114 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Newsletter Section */}
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-50/30 to-white py-24 sm:py-32">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0 -z-10">
+          {/* Background Pattern */}
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, rgba(99, 102, 241, 0.04) 1px, transparent 0)`,
+            backgroundSize: '24px 24px'
+          }}></div>
+          
+          {/* Gradient Blobs */}
+          <div className="absolute -left-32 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-indigo-50 opacity-40 blur-3xl"></div>
+          <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-indigo-50 opacity-30 blur-3xl"></div>
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="relative isolate overflow-hidden bg-white shadow-2xl rounded-3xl">
+            {/* Content Grid */}
+            <div className="grid lg:grid-cols-2 gap-x-8">
+              {/* Left Column - Content */}
+              <div className="relative px-8 py-12 lg:px-12 lg:py-16">
+                {/* Decorative Elements */}
+                <div className="absolute right-0 top-0 -ml-12 -mt-12 h-20 w-20 rotate-6">
+                  <svg className="h-full w-full text-indigo-600/10" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                  </svg>
+                </div>
+
+                <div className="mx-auto max-w-xl lg:mx-0">
+                  <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+                    Let's Keep the
+                    <span className="block text-indigo-600 mt-1">Conversation Going</span>
+                  </h2>
+                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                    Not quite ready to chat? Sign up for our newsletter to get fresh tips on digital marketing, promos, and more—all delivered straight to your inbox.
+                  </p>
+                  
+                  {/* Newsletter Form */}
+                  <form className="mt-8">
+                    <div className="flex flex-col sm:flex-row gap-4">
+                      <div className="relative flex-grow">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Enter your email"
+                          className="block w-full rounded-full border-0 px-6 py-4 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-gray-50/50"
+                          required
+                        />
+                        <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-400">
+                          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                          </svg>
+                        </div>
+                      </div>
+                      <button
+                        type="submit"
+                        className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 sm:flex-shrink-0"
+                      >
+                        Subscribe
+                      </button>
+                    </div>
+                  </form>
+
+                  {/* Trust Indicators */}
+                  <div className="mt-8 flex items-center gap-x-6 text-sm leading-6 text-gray-500">
+                    <div className="flex items-center gap-x-2">
+                      <svg className="h-5 w-5 text-indigo-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path fillRule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clipRule="evenodd" />
+                      </svg>
+                      <span>We respect your privacy</span>
+                    </div>
+                    <div className="flex items-center gap-x-2">
+                      <svg className="h-5 w-5 text-indigo-500" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 01-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004zM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 01-.921.42z" />
+                        <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v.816a3.836 3.836 0 00-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 01-.921-.421l-.879-.66a.75.75 0 00-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 001.5 0v-.81a4.124 4.124 0 001.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 00-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 00.933-1.175l-.415-.33a3.836 3.836 0 00-1.719-.755V6z" clipRule="evenodd" />
+                      </svg>
+                      <span>Unsubscribe anytime</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Column - Illustration */}
+              <div className="relative hidden lg:block">
+                <div className="absolute inset-0 bg-gradient-to-bl from-indigo-50 to-white/90"></div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Email Icon */}
+                  <div className="relative w-48 h-48 transform hover:scale-105 transition-transform duration-300">
+                    <div className="absolute inset-0 bg-indigo-100/50 rounded-3xl rotate-6"></div>
+                    <div className="absolute inset-0 bg-white rounded-2xl shadow-sm flex items-center justify-center">
+                      <svg className="w-24 h-24 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Floating Elements */}
+                  <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-indigo-100/60 rounded-full animate-float-slow"></div>
+                  <div className="absolute bottom-1/4 right-1/4 w-12 h-12 bg-indigo-50 rounded-lg rotate-12 animate-float"></div>
+                  <div className="absolute top-1/3 right-1/3 w-8 h-8 bg-indigo-100/40 rounded-full animate-float-slower"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </PageLayout>
   );
 }

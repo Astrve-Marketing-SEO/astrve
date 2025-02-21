@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import PageLayout from '@/components/PageLayout';
 import ServiceCard from '@/components/ServiceCard';
+import TestimonialCard from '@/components/TestimonialCard';
 import { 
   ComputerDesktopIcon,
   ShareIcon,
@@ -321,6 +322,58 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Testimonials section */}
+      <div className="relative py-24 sm:py-32 bg-gray-900">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="h-full w-full">
+            {/* Dots Grid Pattern */}
+            <div className="absolute inset-0" style={{
+              backgroundImage: `radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.1) 1px, transparent 0)`,
+              backgroundSize: '32px 32px'
+            }}></div>
+            {/* Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-transparent to-purple-900/30"></div>
+          </div>
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
+              Real Results,
+              <span className="block text-indigo-400 mt-1">Real Stories</span>
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              We're proud to have helped businesses of all sizes discover their digital potential.
+              Here's a quick look at what they're saying:
+            </p>
+          </div>
+
+          {/* Testimonials Grid */}
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <TestimonialCard
+              quote="Website Alchemy took our online presence to the next level! We saw a significant increase in traffic and leads within just a few months."
+              name="Sarah Johnson"
+              title="Marketing Director, Acme Corp"
+              imageUrl="https://randomuser.me/api/portraits/women/23.jpg"
+            />
+            <TestimonialCard
+              quote="Their data-driven approach helped us make informed decisions and optimize our marketing campaigns for maximum ROI."
+              name="David Lee"
+              title="CEO, Beta Industries"
+              imageUrl="https://randomuser.me/api/portraits/men/32.jpg"
+            />
+            <TestimonialCard
+              quote="We highly recommend Website Alchemy to any business looking for a reliable and results-oriented digital marketing partner."
+              name="Emily Chen"
+              title="Owner, Gamma Solutions"
+              imageUrl="https://randomuser.me/api/portraits/women/45.jpg"
+            />
           </div>
         </div>
       </div>

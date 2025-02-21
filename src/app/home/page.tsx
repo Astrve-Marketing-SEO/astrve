@@ -265,6 +265,65 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Why Partner with Us section */}
+      <div className="relative overflow-hidden py-24 sm:py-32">
+        <div className="absolute left-1/2 top-0 -translate-x-1/2 blur-3xl opacity-30 pointer-events-none">
+          <div className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-indigo-300 to-purple-200 -rotate-[30deg]"></div>
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div className="max-w-xl">
+              <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+                Why Partner
+                <span className="block text-indigo-600 font-semibold mt-1">with Us?</span>
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                Just like the old alchemists who turned base metals into gold, we take ordinary digital efforts and transform them into powerful, results-driven strategies. It's not magic—it's expertise, creativity, and a passion for seeing you thrive online.
+              </p>
+              <div className="mt-8">
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-500 transition-all duration-200 group"
+                >
+                  About Us
+                  <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Illustration */}
+            <div className="relative lg:ml-8">
+              <div className="relative aspect-[4/3] w-full">
+                {/* Main Container */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Central Element */}
+                  <div className="relative w-48 h-48 bg-gradient-to-br from-indigo-100 to-white rounded-2xl shadow-xl flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                    <div className="absolute inset-2 border-2 border-indigo-100 rounded-xl"></div>
+                    <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">WA</div>
+                  </div>
+
+                  {/* Floating Elements */}
+                  <div className="absolute top-1/4 -left-4 w-20 h-20 bg-gradient-to-br from-purple-100 to-indigo-50 rounded-lg shadow-lg transform rotate-12 animate-float-slow"></div>
+                  <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-50 rounded-full shadow-lg animate-float-slow delay-150"></div>
+
+                  {/* Connection Lines */}
+                  <div className="absolute left-0 top-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-200 to-transparent transform -rotate-45"></div>
+                  <div className="absolute left-0 top-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-200 to-transparent transform rotate-45"></div>
+
+                  {/* Data Points */}
+                  <div className="absolute top-0 left-1/4 w-3 h-3 bg-indigo-400 rounded-full animate-pulse"></div>
+                  <div className="absolute bottom-0 right-1/4 w-3 h-3 bg-purple-400 rounded-full animate-pulse delay-75"></div>
+                  <div className="absolute top-1/4 right-0 w-3 h-3 bg-indigo-300 rounded-full animate-pulse delay-150"></div>
+                  <div className="absolute bottom-1/4 left-0 w-3 h-3 bg-purple-300 rounded-full animate-pulse delay-225"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </PageLayout>
   );
 }

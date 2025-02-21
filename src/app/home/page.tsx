@@ -494,6 +494,122 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+
+      {/* Latest Blog Section */}
+      <div className="relative bg-gradient-to-b from-white to-gray-50 py-24 sm:py-32 overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+          <div className="absolute -left-8 top-full w-96 h-96 -translate-y-1/2 bg-indigo-50 opacity-50 blur-3xl"></div>
+          <div className="absolute -right-8 bottom-full w-96 h-96 translate-y-1/2 bg-indigo-50 opacity-50 blur-3xl"></div>
+        </div>
+
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="mx-auto max-w-2xl text-center mb-16">
+            <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+              Latest from Our
+              <span className="block text-indigo-600 mt-1">Digital Alchemy Lab</span>
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Discover insights, strategies, and success stories that can transform your digital presence
+              from ordinary to extraordinary.
+            </p>
+          </div>
+
+          {/* Blog Posts Grid */}
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-12 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            {/* Blog Post 1 */}
+            <article className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1115&q=80"
+                alt="Data Analytics Dashboard"
+                className="absolute inset-0 -z-10 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+
+              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <time dateTime="2024-01-15" className="mr-8">Jan 15, 2024</time>
+                <div className="-ml-4 flex items-center gap-x-4">
+                  <svg viewBox="0 0 2 2" className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
+                    <circle cx="1" cy="1" r="1" />
+                  </svg>
+                  <div className="flex gap-x-2.5">Data Analytics</div>
+                </div>
+              </div>
+              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                <Link href="/blog/data-driven-marketing-strategies" className="hover:text-indigo-300 transition-colors">
+                  <span className="absolute inset-0"></span>
+                  Data-Driven Marketing Strategies for 2024
+                </Link>
+              </h3>
+            </article>
+
+            {/* Blog Post 2 */}
+            <article className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="SEO Strategy Meeting"
+                className="absolute inset-0 -z-10 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+
+              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <time dateTime="2024-01-10" className="mr-8">Jan 10, 2024</time>
+                <div className="-ml-4 flex items-center gap-x-4">
+                  <svg viewBox="0 0 2 2" className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
+                    <circle cx="1" cy="1" r="1" />
+                  </svg>
+                  <div className="flex gap-x-2.5">SEO</div>
+                </div>
+              </div>
+              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                <Link href="/blog/seo-best-practices" className="hover:text-indigo-300 transition-colors">
+                  <span className="absolute inset-0"></span>
+                  SEO Best Practices That Actually Work in 2024
+                </Link>
+              </h3>
+            </article>
+
+            {/* Blog Post 3 */}
+            <article className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pb-8 pt-80 sm:pt-48 lg:pt-80">
+              <img
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Social Media Strategy"
+                className="absolute inset-0 -z-10 h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 -z-10 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+
+              <div className="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">
+                <time dateTime="2024-01-05" className="mr-8">Jan 05, 2024</time>
+                <div className="-ml-4 flex items-center gap-x-4">
+                  <svg viewBox="0 0 2 2" className="-ml-0.5 h-0.5 w-0.5 flex-none fill-white/50">
+                    <circle cx="1" cy="1" r="1" />
+                  </svg>
+                  <div className="flex gap-x-2.5">Social Media</div>
+                </div>
+              </div>
+              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+                <Link href="/blog/social-media-engagement" className="hover:text-indigo-300 transition-colors">
+                  <span className="absolute inset-0"></span>
+                  Boost Your Social Media Engagement with AI
+                </Link>
+              </h3>
+            </article>
+          </div>
+
+          {/* View All Posts Button */}
+          <div className="mt-16 text-center">
+            <Link
+              href="/blog"
+              className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 group"
+            >
+              View All Posts
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+        </div>
+      </div>
     </PageLayout>
   );
 }

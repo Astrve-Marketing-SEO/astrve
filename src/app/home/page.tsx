@@ -4,6 +4,7 @@ import PageLayout from '@/components/PageLayout';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
 import ClientCalendly from '@/components/ClientCalendly';
+import LogoBadge from '@/components/LogoBadge';
 import { 
   ComputerDesktopIcon,
   ShareIcon,
@@ -411,6 +412,85 @@ export default function HomePage() {
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
               <ClientCalendly />
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Accolades Section */}
+      <div className="relative bg-gradient-to-b from-white via-gray-50/30 to-white py-24 sm:py-32 overflow-hidden">
+        {/* Decorative Elements */}
+        <div className="absolute inset-0">
+          {/* Floating Shapes */}
+          <div className="absolute inset-0">
+            {/* Top Left Square */}
+            <div className="absolute top-20 left-[5%] w-24 h-24 border border-blue-200/50 rounded-xl transform rotate-[15deg] animate-float-slow">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent rounded-xl" />
+            </div>
+
+            {/* Top Right Circle */}
+            <div className="absolute top-40 right-[10%] w-16 h-16 border border-purple-200/50 rounded-full animate-float-slower">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-transparent rounded-full" />
+            </div>
+
+            {/* Bottom Left Diamond */}
+            <div className="absolute bottom-32 left-[15%] w-20 h-20 border border-indigo-200/50 transform rotate-45 animate-float">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent" />
+            </div>
+
+            {/* Bottom Right Square */}
+            <div className="absolute bottom-40 right-[8%] w-28 h-28 border border-blue-200/50 rounded-xl transform -rotate-[15deg] animate-float-slow">
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent rounded-xl" />
+            </div>
+
+            {/* Center Decorative Elements */}
+            <div className="absolute top-1/2 left-[2%] w-2 h-2 bg-purple-200 rounded-full animate-pulse" />
+            <div className="absolute top-[40%] right-[3%] w-3 h-3 bg-blue-200 rounded-full animate-pulse delay-150" />
+            <div className="absolute bottom-[35%] left-[7%] w-2 h-2 bg-indigo-200 rounded-full animate-pulse delay-300" />
+          </div>
+          
+          {/* Subtle Grid */}
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800A_1px,transparent_1px),linear-gradient(to_bottom,#8080800A_1px,transparent_1px)] bg-[size:24px_24px] opacity-30" />
+        </div>
+
+        <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
+          {/* Section Header */}
+          <div className="mx-auto max-w-2xl text-center mb-20">
+            <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+              Accolades
+            </h2>
+            <div className="mt-4">
+              <p className="text-lg leading-8 text-gray-600">
+                Trusted by industry leaders and powered by cutting-edge tools
+              </p>
+            </div>
+          </div>
+
+          {/* All Logos Grid */}
+          <div className="mx-auto grid max-w-lg grid-cols-1 items-start gap-10 sm:max-w-xl sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+            <LogoBadge
+              logo="https://cdn.worldvectorlogo.com/logos/google-ads-2.svg"
+              name="Google Ads Partner"
+            />
+            <LogoBadge
+              logo="https://cdn.worldvectorlogo.com/logos/hubspot-1.svg"
+              name="HubSpot Solutions"
+            />
+            <LogoBadge
+              logo="https://cdn.worldvectorlogo.com/logos/aws-2.svg"
+              name="AWS Advanced"
+            />
+            <LogoBadge
+              logo="https://cdn.worldvectorlogo.com/logos/semrush.svg"
+              name="SEMrush Pro"
+            />
+            <LogoBadge
+              logo="https://cdn.worldvectorlogo.com/logos/mailchimp.svg"
+              name="Mailchimp Expert"
+            />
+            <LogoBadge
+              logo="https://cdn.worldvectorlogo.com/logos/ahrefs.svg"
+              name="Ahrefs Master"
+            />
           </div>
         </div>
       </div>

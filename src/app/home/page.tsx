@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import PageLayout from '@/components/PageLayout';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
@@ -10,9 +9,6 @@ import {
   ComputerDesktopIcon,
   ShareIcon,
   MapPinIcon,
-  MagnifyingGlassIcon,
-  EyeIcon,
-  ChartBarIcon
 } from '@heroicons/react/24/outline';
 import { ArrowUpRight, ArrowRight, BarChart3, LineChart, Network } from 'lucide-react';
 

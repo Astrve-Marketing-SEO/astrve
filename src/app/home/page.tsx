@@ -3,6 +3,7 @@ import Image from 'next/image';
 import PageLayout from '@/components/PageLayout';
 import ServiceCard from '@/components/ServiceCard';
 import TestimonialCard from '@/components/TestimonialCard';
+import ClientCalendly from '@/components/ClientCalendly';
 import { 
   ComputerDesktopIcon,
   ShareIcon,
@@ -374,6 +375,42 @@ export default function HomePage() {
               title="Owner, Gamma Solutions"
               imageUrl="https://randomuser.me/api/portraits/women/45.jpg"
             />
+          </div>
+        </div>
+      </div>
+
+      {/* Calendly section */}
+      <div className="relative bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-16 sm:py-24">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left Content */}
+            <div className="max-w-xl space-y-6 pt-8">
+              <div className="space-y-4">
+                <h2 className="text-4xl font-semibold tracking-tight text-gray-900">
+                  Ready to Transform
+                  <span className="block text-indigo-600">Your Marketing?</span>
+                </h2>
+                <p className="text-2xl font-medium text-gray-900">Book Your FREE Consultation Now</p>
+              </div>
+
+              <p className="text-lg leading-8 text-gray-600">
+                You've worked hard to build your business. Now, let's make sure everyone else sees the value you bring.
+                Our team is here to help you stand out, grow faster, and leave a lasting impression on every visitor.
+              </p>
+
+              {/* Time Indicator */}
+              <div className="flex items-center gap-3 text-gray-500">
+                <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span>30-minute free consultation</span>
+              </div>
+            </div>
+
+            {/* Right Side - Calendly Widget */}
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+              <ClientCalendly />
+            </div>
           </div>
         </div>
       </div>

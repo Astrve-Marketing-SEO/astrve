@@ -3,9 +3,9 @@ import Image from 'next/image';
 import PageLayout from '@/components/PageLayout';
 import ServiceCard from '@/components/ServiceCard';
 import { 
-  GlobeAltIcon, 
-  PresentationChartLineIcon, 
-  ChatBubbleBottomCenterTextIcon,
+  ComputerDesktopIcon,
+  ShareIcon,
+  MapPinIcon,
   MagnifyingGlassIcon,
   EyeIcon,
   ChartBarIcon
@@ -216,54 +216,52 @@ export default function HomePage() {
       </div>
       
       {/* Services section */}
-      <div className="py-24 sm:py-32 bg-gradient-to-b from-white to-indigo-50/50">
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-white to-indigo-50/20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium mb-6">
-              <span>Our Services</span>
-              <div className="w-px h-4 bg-indigo-200"></div>
-              <span className="text-indigo-500">Tailored Solutions</span>
-            </div>
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-transparent">
-              Transform Your Digital Presence
+          {/* Section Header */}
+          <div className="max-w-2xl">
+            <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
+              Our Alchemy: Services That Turn Heads
+              <span className="block text-indigo-600">and Drive Results</span>
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              Comprehensive digital solutions powered by data-driven insights to help your business thrive in the digital landscape
+              Whether you need a bold new website, an engaging social media presence, or a powerhouse reputation on Google,
+              our solutions are tailored to fit your goals—no cookie-cutter templates here.
             </p>
           </div>
-          
-          <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-            <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                <ServiceCard
-                  icon={GlobeAltIcon}
-                  title="Website Design & Development"
-                  description="Custom websites that capture your brand's essence and drive results. Built with modern technologies and optimized for performance."
-                  href="/services/website-design"
-                />
-              </div>
-              
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                <ServiceCard
-                  icon={PresentationChartLineIcon}
-                  title="Digital Marketing"
-                  description="Strategic marketing solutions backed by data analytics to increase your online visibility and drive measurable results."
-                  href="/services/digital-marketing"
-                />
-              </div>
-              
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                <ServiceCard
-                  icon={ChatBubbleBottomCenterTextIcon}
-                  title="SEO Optimization"
-                  description="Data-driven SEO strategies to improve your search rankings, attract qualified traffic, and increase your organic reach."
-                  href="/services/seo"
-                />
-              </div>
-            </dl>
+
+          {/* Services Grid */}
+          <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
+            {/* Service Cards */}
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <ServiceCard
+                icon={ComputerDesktopIcon}
+                title="Stunning Websites That Convert"
+                description="First impressions matter. We build beautiful, responsive websites that are not just visually appealing, but strategically designed to convert visitors into customers."
+                href="/services/website-design"
+              />
+            </div>
+            
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <ServiceCard
+                icon={ShareIcon}
+                title="Ignite Your Social Presence"
+                description="Connect with your audience on a deeper level. We create engaging social media strategies that build brand awareness, foster community, and drive traffic."
+                href="/services/social-media-marketing"
+              />
+            </div>
+            
+            <div className="relative group">
+              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <ServiceCard
+                icon={MapPinIcon}
+                title="Dominate Local Search & Protect Your Reputation"
+                description="Get found where it matters most – local search. We optimize your Google My Business profile and manage your online reputation to build trust and attract local customers."
+                href="/services/google-my-business-reputation-management"
+              />
+            </div>
           </div>
         </div>
       </div>

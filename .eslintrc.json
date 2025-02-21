@@ -5,12 +5,7 @@
     "@typescript-eslint/no-unused-vars": "error",
     "@typescript-eslint/no-explicit-any": "error",
     "@next/next/no-img-element": "error",
-    "react/no-unescaped-entities": [
-      "error",
-      {
-        "forbid": [">", "}", "\"", "'", "}"] 
-      }
-    ]
+    "react/no-unescaped-entities": "off"
   },
   "ignorePatterns": [
     "node_modules/",

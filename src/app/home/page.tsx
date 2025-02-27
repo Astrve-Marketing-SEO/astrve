@@ -102,45 +102,137 @@ export default function HomePage() {
             </div>
 
             {/* Right column - Interactive visualization */}
-            <div className="relative lg:ml-auto bg-white rounded-2xl shadow-2xl shadow-indigo-100 p-8">
-              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50 rounded-2xl -z-10"></div>
-              <div className="space-y-8">
-                <div className="flex items-center justify-between">
-                  <div className="space-y-1">
-                    <div className="text-lg font-semibold text-gray-900">Marketing Performance</div>
-                    <div className="text-sm text-gray-600">Last 30 days</div>
-                  </div>
-                  <div className="flex gap-2">
-                    <button className="p-2 rounded-lg hover:bg-gray-50 text-gray-600">
-                      <BarChart3 className="w-5 h-5" />
-                    </button>
-                    <button className="p-2 rounded-lg bg-indigo-50 text-indigo-600">
-                      <LineChart className="w-5 h-5" />
-                    </button>
-                    <button className="p-2 rounded-lg hover:bg-gray-50 text-gray-600">
-                      <Network className="w-5 h-5" />
-                    </button>
-                  </div>
-                </div>
-                
-                {/* Graph Placeholder */}
-                <div className="aspect-[4/3] rounded-xl bg-gradient-to-br from-indigo-50 to-white p-4">
-                  <div className="w-full h-full bg-gradient-to-r from-indigo-600 to-indigo-400 opacity-25 rounded-lg"></div>
-                </div>
-
-                {/* Metrics */}
-                <div className="grid grid-cols-3 gap-4">
-                  <div className="space-y-1 p-4 rounded-lg bg-indigo-50">
-                    <div className="text-sm text-gray-600">Traffic</div>
-                    <div className="text-lg font-semibold text-indigo-600">+47.5%</div>
-                  </div>
-                  <div className="space-y-1 p-4 rounded-lg bg-indigo-50">
-                    <div className="text-sm text-gray-600">Conversions</div>
-                    <div className="text-lg font-semibold text-indigo-600">+32.2%</div>
-                  </div>
-                  <div className="space-y-1 p-4 rounded-lg bg-indigo-50">
-                    <div className="text-sm text-gray-600">Revenue</div>
-                    <div className="text-lg font-semibold text-indigo-600">+28.4%</div>
+            <div className="relative lg:ml-auto">
+              <div className="absolute inset-0 -m-8 rounded-3xl bg-gradient-to-tr from-indigo-50 to-transparent opacity-40 blur-2xl"></div>
+              <div className="relative">
+                <div className="relative overflow-hidden rounded-2xl bg-indigo-50 p-8 shadow-xl">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-indigo-100 to-indigo-50 opacity-30"></div>
+                  <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.5))] -z-10"></div>
+                  
+                  <div className="relative grid grid-cols-6 gap-4">
+                    {/* Top row - Analytics dashboard header */}
+                    <div className="col-span-6 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                      <div className="flex justify-between items-center">
+                        <div className="flex items-center gap-3">
+                          <div className="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center">
+                            <BarChart3 className="h-5 w-5 text-indigo-600" />
+                          </div>
+                          <div>
+                            <div className="text-lg font-semibold text-gray-800">Marketing Dashboard</div>
+                            <div className="text-xs text-gray-500">Comprehensive analytics</div>
+                          </div>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <div className="h-2 w-2 rounded-full bg-green-500"></div>
+                          <span className="text-xs font-medium text-green-600">Live</span>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Middle section - Performance graph */}
+                    <div className="col-span-4 h-40 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                      <div className="flex justify-between items-center mb-2">
+                        <div className="text-sm font-medium text-gray-600">Conversion Rate</div>
+                        <div className="text-sm font-semibold text-indigo-600">+32.5% MoM</div>
+                      </div>
+                      <div className="relative h-28">
+                        {/* Area chart */}
+                        <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="none">
+                          <defs>
+                            <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+                              <stop offset="0%" stopColor="rgb(99, 102, 241)" stopOpacity="0.5" />
+                              <stop offset="100%" stopColor="rgb(99, 102, 241)" stopOpacity="0" />
+                            </linearGradient>
+                          </defs>
+                          <path 
+                            d="M0,56 L20,48 L40,52 L60,40 L80,44 L100,28 L120,32 L140,24 L160,16 L180,20 L200,8 L220,12 L240,4 L260,0 L280,8 L300,4 L320,12 L340,8 L360,16 L380,8 L400,12 L420,4 L440,8 L460,4 L480,0 L500,8 L520,4 L540,8 L560,4 L580,8 L600,4"
+                            fill="url(#chart-gradient)"
+                            stroke="rgb(99, 102, 241)"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            transform="scale(0.5, 0.5)"
+                          />
+                        </svg>
+                        
+                        {/* Horizontal grid lines */}
+                        <div className="absolute inset-0 grid grid-rows-4 h-full w-full">
+                          {[0, 1, 2, 3].map((i) => (
+                            <div key={i} className="border-t border-gray-100 w-full"></div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Side metrics */}
+                    <div className="col-span-2 grid grid-rows-2 gap-4">
+                      <div className="overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <div className="text-sm font-medium text-gray-600">Engagement</div>
+                            <div className="text-lg font-semibold text-gray-900">87.4%</div>
+                          </div>
+                          <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
+                            <ArrowUpRight className="h-4 w-4 text-green-600" />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                        <div className="flex items-center justify-between">
+                          <div>
+                            <div className="text-sm font-medium text-gray-600">Bounce Rate</div>
+                            <div className="text-lg font-semibold text-gray-900">12.8%</div>
+                          </div>
+                          <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
+                            <ArrowUpRight className="h-4 w-4 text-green-600 rotate-180" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Bottom row - Channel distribution */}
+                    <div className="col-span-3 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                      <div className="text-sm font-medium text-gray-600 mb-2">Channel Mix</div>
+                      <div className="space-y-2">
+                        <div>
+                          <div className="flex justify-between text-xs mb-1">
+                            <span>Organic</span>
+                            <span className="font-medium">42%</span>
+                          </div>
+                          <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+                            <div className="h-full bg-indigo-500 rounded-full" style={{ width: '42%' }}></div>
+                          </div>
+                        </div>
+                        <div>
+                          <div className="flex justify-between text-xs mb-1">
+                            <span>Social</span>
+                            <span className="font-medium">28%</span>
+                          </div>
+                          <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+                            <div className="h-full bg-indigo-400 rounded-full" style={{ width: '28%' }}></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* ROI calculator */}
+                    <div className="col-span-3 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                      <div className="text-sm font-medium text-gray-600 mb-1">ROI</div>
+                      <div className="flex items-center justify-between">
+                        <div className="text-xs text-gray-500">Input</div>
+                        <div className="text-xs font-medium text-gray-700">$10k</div>
+                      </div>
+                      <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden my-1">
+                        <div className="h-full bg-indigo-500 rounded-full" style={{ width: '100%' }}></div>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <div className="text-xs text-gray-500">Output</div>
+                        <div className="text-xs font-medium text-green-600">$35k</div>
+                      </div>
+                      <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden my-1">
+                        <div className="h-full bg-green-500 rounded-full" style={{ width: '100%' }}></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,7 +277,7 @@ export default function HomePage() {
             </div>
             
             {/* Right Column - Data Visualization */}
-            <div className="relative lg:-mr-8">
+            <div className="relative lg:ml-8">
               <div className="relative aspect-square w-full max-w-lg mx-auto">
                 {/* Abstract Data Elements */}
                 <div className="absolute inset-0">
@@ -308,7 +400,7 @@ export default function HomePage() {
 
                   {/* Floating Elements */}
                   <div className="absolute top-1/4 -left-4 w-20 h-20 bg-gradient-to-br from-purple-100 to-indigo-50 rounded-lg shadow-lg transform rotate-12 animate-float-slow"></div>
-                  <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-50 rounded-full shadow-lg animate-float-slow delay-150"></div>
+                  <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-50 rounded-full animate-float-slow delay-150"></div>
 
                   {/* Connection Lines */}
                   <div className="absolute left-0 top-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-200 to-transparent transform -rotate-45"></div>
@@ -639,7 +731,7 @@ export default function HomePage() {
                 {/* Decorative Elements */}
                 <div className="absolute right-0 top-0 -ml-12 -mt-12 h-20 w-20 rotate-6">
                   <svg className="h-full w-full text-indigo-600/10" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.004 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
+                    <path d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.003 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
                   </svg>
                 </div>
 

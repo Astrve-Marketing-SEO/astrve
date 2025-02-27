@@ -54,7 +54,7 @@ export default function ClientCalendly() {
           window.dispatchEvent(new Event('calendly-script-loaded'));
         }}
       />
-      <div id="calendly-inline-widget" style={{ minWidth: '320px', height: '700px' }} />
+      <div id="calendly-inline-widget" style={{ minWidth: '100%', height: '800px' }} />
     </>
   );
 }

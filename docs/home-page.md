@@ -23,10 +23,30 @@ Ok now this for below the this section, please do not commit the changes
 see changes and then make commit message then commit, do it all in one command
 
 # Prompt 4
-For the next section
+Take inspiration from @HomePage , @SocialMediaMarketingPage , @GoogleMyBusinessPage follow instructions for making the next section 
 
-Take inspiration from @page.tsx, @page.tsx, @page.tsx follow instructions for making the next section 
+@page.tsx#L483 
 
-
-@page.tsx 
+@EmailMarketingPage 
+Name each section
 ---
+
+# Prompt 5
+Take inspiration from websites that is related to this content, act as a website designer with graphic skills, take inspiration from @HomePage @SocialMediaMarketingPage , @GoogleMyBusinessPage 
+
+redesign this section
+
+@page.tsx#L596-681 
+
+---
+# Prompt 6
+Take inspiration from websites that is related to this content, act as a website designer with graphic skills, take inspiration from @HomePage  @SocialMediaMarketingPage  , @GoogleMyBusinessPage  
+
+redesign these sections
+@page.tsx#L40-232 
+
+Can you do it section by section? focus on one section first then proceed but do not do it in one reply I want to be able to decide if its good or need modifications before proceeding to next section.
+
+---
+# Prompt 7
+Ok go redesign next section

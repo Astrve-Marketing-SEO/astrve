@@ -27,8 +27,8 @@ const navigation = [
   },
   { name: 'Web Hosting', href: '/hosting' },
   { name: 'About', href: '/about' },
+  { name: 'Pricing', href: '/pricing' },
   { name: 'Portfolio', href: '/portfolio' },
-  { name: 'Pricing', href: '/pricing' }
 ];
 
 export default function Navbar() {

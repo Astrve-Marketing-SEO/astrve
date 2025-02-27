@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Search Engine Optimization</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4F46E5" offset="0%"></stop>
+            <stop stop-color="#6366F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#EEF2FF" offset="0%"></stop>
+            <stop stop-color="#C7D2FE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="SEO" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="#F9FAFB" x="0" y="0" width="600" height="400" rx="8"></rect>
+        
+        <!-- Search Results -->
+        <g id="SearchResults" transform="translate(150, 50)">
+            <rect id="SearchCard" fill="#FFFFFF" x="0" y="0" width="300" height="300" rx="8" stroke="#E5E7EB" stroke-width="2"></rect>
+            
+            <!-- Search Bar -->
+            <rect id="SearchBar" fill="#F3F4F6" x="20" y="20" width="260" height="40" rx="20"></rect>
+            <circle id="SearchIcon" fill="#4F46E5" cx="40" cy="40" r="10"></circle>
+            <rect id="SearchText" fill="#A5B4FC" x="60" y="35" width="100" height="10" rx="2"></rect>
+            
+            <!-- Search Results -->
+            <g id="Results" transform="translate(20, 80)">
+                <!-- Result 1 -->
+                <g id="Result1">
+                    <rect id="ResultTitle1" fill="#4F46E5" x="0" y="0" width="150" height="15" rx="2"></rect>
+                    <rect id="ResultURL1" fill="#10B981" x="0" y="25" width="100" height="10" rx="2"></rect>
+                    <rect id="ResultDesc1" fill="#E5E7EB" x="0" y="45" width="260" height="8" rx="2"></rect>
+                    <rect id="ResultDesc1-2" fill="#E5E7EB" x="0" y="58" width="240" height="8" rx="2"></rect>
+                </g>
+                
+                <!-- Result 2 -->
+                <g id="Result2" transform="translate(0, 80)">
+                    <rect id="ResultTitle2" fill="#4F46E5" x="0" y="0" width="180" height="15" rx="2"></rect>
+                    <rect id="ResultURL2" fill="#10B981" x="0" y="25" width="120" height="10" rx="2"></rect>
+                    <rect id="ResultDesc2" fill="#E5E7EB" x="0" y="45" width="260" height="8" rx="2"></rect>
+                    <rect id="ResultDesc2-2" fill="#E5E7EB" x="0" y="58" width="230" height="8" rx="2"></rect>
+                </g>
+                
+                <!-- Result 3 -->
+                <g id="Result3" transform="translate(0, 160)">
+                    <rect id="ResultTitle3" fill="#4F46E5" x="0" y="0" width="160" height="15" rx="2"></rect>
+                    <rect id="ResultURL3" fill="#10B981" x="0" y="25" width="110" height="10" rx="2"></rect>
+                    <rect id="ResultDesc3" fill="#E5E7EB" x="0" y="45" width="260" height="8" rx="2"></rect>
+                    <rect id="ResultDesc3-2" fill="#E5E7EB" x="0" y="58" width="250" height="8" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+        
+        <!-- SEO Icons -->
+        <g id="SEOIcons" transform="translate(50, 100)">
+            <!-- Magnifying Glass -->
+            <g id="MagnifyingGlass" transform="translate(0, 0)">
+                <rect id="MGBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <circle id="MGCircle" fill="none" stroke="#4F46E5" stroke-width="4" cx="25" cy="25" r="15"></circle>
+                <line x1="35" y1="35" x2="45" y2="45" stroke="#4F46E5" stroke-width="4" stroke-linecap="round"></line>
+            </g>
+            
+            <!-- Keywords -->
+            <g id="Keywords" transform="translate(0, 80)">
+                <rect id="KeywordsBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <rect id="KeywordTag1" fill="#4F46E5" x="15" y="15" width="30" height="10" rx="5"></rect>
+                <rect id="KeywordTag2" fill="#4F46E5" x="10" y="30" width="40" height="10" rx="5"></rect>
+                <rect id="KeywordTag3" fill="#4F46E5" x="20" y="45" width="25" height="10" rx="5"></rect>
+            </g>
+            
+            <!-- Analytics -->
+            <g id="Analytics" transform="translate(0, 160)">
+                <rect id="AnalyticsBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <rect id="AnalyticsBar1" fill="#4F46E5" x="15" y="35" width="5" height="10" rx="1"></rect>
+                <rect id="AnalyticsBar2" fill="#4F46E5" x="25" y="25" width="5" height="20" rx="1"></rect>
+                <rect id="AnalyticsBar3" fill="#4F46E5" x="35" y="15" width="5" height="30" rx="1"></rect>
+                <rect id="AnalyticsBar4" fill="#4F46E5" x="45" y="20" width="5" height="25" rx="1"></rect>
+            </g>
+        </g>
+        
+        <!-- SEO Icons Right -->
+        <g id="SEOIconsRight" transform="translate(490, 100)">
+            <!-- Globe -->
+            <g id="Globe" transform="translate(0, 0)">
+                <rect id="GlobeBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <circle id="GlobeCircle" fill="none" stroke="#4F46E5" stroke-width="2" cx="30" cy="30" r="20"></circle>
+                <line x1="10" y1="30" x2="50" y2="30" stroke="#4F46E5" stroke-width="2"></line>
+                <line x1="30" y1="10" x2="30" y2="50" stroke="#4F46E5" stroke-width="2"></line>
+                <path d="M20,20 C25,15 35,15 40,20 C45,25 45,35 40,40 C35,45 25,45 20,40 C15,35 15,25 20,20 Z" id="GlobeContinent" fill="#4F46E5" opacity="0.3"></path>
+            </g>
+            
+            <!-- Speed -->
+            <g id="Speed" transform="translate(0, 80)">
+                <rect id="SpeedBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <path d="M20,40 L30,30 L40,40 Z" id="SpeedArrow" fill="#4F46E5"></path>
+                <circle id="SpeedCircle" fill="none" stroke="#4F46E5" stroke-width="2" cx="30" cy="30" r="20"></circle>
+            </g>
+            
+            <!-- Mobile -->
+            <g id="Mobile" transform="translate(0, 160)">
+                <rect id="MobileBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <rect id="MobilePhone" fill="none" stroke="#4F46E5" stroke-width="2" x="20" y="15" width="20" height="35" rx="3"></rect>
+                <rect id="MobileScreen" fill="#4F46E5" x="23" y="20" width="14" height="20" rx="1"></rect>
+                <circle id="MobileButton" fill="#4F46E5" cx="30" cy="45" r="2"></circle>
+            </g>
+        </g>
+        
+        <!-- Ranking Arrows -->
+        <g id="RankingArrows" transform="translate(300, 360)">
+            <polygon id="UpArrow" fill="#10B981" points="0,20 10,0 20,20"></polygon>
+        </g>
+    </g>
+</svg>

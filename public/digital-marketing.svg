@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="600px" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Digital Marketing Services</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#EEF2FF" offset="0%"></stop>
+            <stop stop-color="#C7D2FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#4F46E5" offset="0%"></stop>
+            <stop stop-color="#6366F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F3F4F6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Digital-Marketing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="url(#linearGradient-1)" x="0" y="0" width="800" height="600" rx="20"></rect>
+        
+        <!-- Dashboard Interface -->
+        <g id="Dashboard" transform="translate(100, 100)">
+            <rect id="Window" fill="url(#linearGradient-3)" x="0" y="0" width="600" height="400" rx="12"></rect>
+            <rect id="Toolbar" fill="#F9FAFB" x="0" y="0" width="600" height="40" rx="12 12 0 0"></rect>
+            
+            <!-- Browser Controls -->
+            <circle id="Close" fill="#EF4444" cx="20" cy="20" r="6"></circle>
+            <circle id="Minimize" fill="#F59E0B" cx="40" cy="20" r="6"></circle>
+            <circle id="Expand" fill="#10B981" cx="60" cy="20" r="6"></circle>
+            
+            <!-- Dashboard Header -->
+            <rect id="Header" fill="#F3F4F6" x="20" y="60" width="560" height="60" rx="4"></rect>
+            <rect id="Logo" fill="url(#linearGradient-2)" x="40" y="75" width="100" height="30" rx="4"></rect>
+            
+            <!-- Navigation Tabs -->
+            <rect id="Tab1" fill="#4F46E5" x="160" y="85" width="80" height="10" rx="2"></rect>
+            <rect id="Tab2" fill="#E5E7EB" x="260" y="85" width="80" height="10" rx="2"></rect>
+            <rect id="Tab3" fill="#E5E7EB" x="360" y="85" width="80" height="10" rx="2"></rect>
+            <rect id="Tab4" fill="#E5E7EB" x="460" y="85" width="80" height="10" rx="2"></rect>
+            
+            <!-- Main Dashboard Content -->
+            <g id="LeftPanel" transform="translate(20, 140)">
+                <!-- Analytics Graph -->
+                <rect id="GraphPanel" fill="#F9FAFB" x="0" y="0" width="270" height="220" rx="4"></rect>
+                <rect id="GraphTitle" fill="#4F46E5" x="20" y="20" width="100" height="10" rx="2"></rect>
+                
+                <!-- Graph Lines -->
+                <polyline id="GraphLine1" stroke="#4F46E5" stroke-width="3" points="20,160 60,140 100,150 140,120 180,90 220,70 250,100"></polyline>
+                <polyline id="GraphLine2" stroke="#818CF8" stroke-width="2" opacity="0.6" points="20,180 60,170 100,175 140,160 180,150 220,130 250,140"></polyline>
+                
+                <!-- Graph Points -->
+                <circle fill="#4F46E5" cx="60" cy="140" r="4"></circle>
+                <circle fill="#4F46E5" cx="100" cy="150" r="4"></circle>
+                <circle fill="#4F46E5" cx="140" cy="120" r="4"></circle>
+                <circle fill="#4F46E5" cx="180" cy="90" r="4"></circle>
+                <circle fill="#4F46E5" cx="220" cy="70" r="4"></circle>
+                <circle fill="#4F46E5" cx="250" cy="100" r="4"></circle>
+                
+                <!-- X and Y Axis -->
+                <line x1="20" y1="190" x2="250" y2="190" stroke="#E5E7EB" stroke-width="1"></line>
+                <line x1="20" y1="50" x2="20" y2="190" stroke="#E5E7EB" stroke-width="1"></line>
+                
+                <!-- Axis Labels -->
+                <rect id="XLabel1" fill="#D1D5DB" x="40" y="195" width="10" height="5" rx="1"></rect>
+                <rect id="XLabel2" fill="#D1D5DB" x="90" y="195" width="10" height="5" rx="1"></rect>
+                <rect id="XLabel3" fill="#D1D5DB" x="140" y="195" width="10" height="5" rx="1"></rect>
+                <rect id="XLabel4" fill="#D1D5DB" x="190" y="195" width="10" height="5" rx="1"></rect>
+                <rect id="XLabel5" fill="#D1D5DB" x="240" y="195" width="10" height="5" rx="1"></rect>
+                
+                <rect id="YLabel1" fill="#D1D5DB" x="10" y="60" width="5" height="5" rx="1"></rect>
+                <rect id="YLabel2" fill="#D1D5DB" x="10" y="100" width="5" height="5" rx="1"></rect>
+                <rect id="YLabel3" fill="#D1D5DB" x="10" y="140" width="5" height="5" rx="1"></rect>
+                <rect id="YLabel4" fill="#D1D5DB" x="10" y="180" width="5" height="5" rx="1"></rect>
+            </g>
+            
+            <g id="RightPanel" transform="translate(310, 140)">
+                <!-- Social Media Stats -->
+                <rect id="StatsPanel" fill="#F9FAFB" x="0" y="0" width="270" height="100" rx="4"></rect>
+                <rect id="StatsTitle" fill="#4F46E5" x="20" y="20" width="120" height="10" rx="2"></rect>
+                
+                <!-- Social Media Icons -->
+                <circle id="SocialIcon1" fill="#818CF8" cx="40" cy="60" r="15"></circle>
+                <circle id="SocialIcon2" fill="#818CF8" cx="110" cy="60" r="15"></circle>
+                <circle id="SocialIcon3" fill="#818CF8" cx="180" cy="60" r="15"></circle>
+                <circle id="SocialIcon4" fill="#818CF8" cx="250" cy="60" r="15"></circle>
+                
+                <!-- Stats Bars -->
+                <rect id="StatsBar1" fill="#4F46E5" x="30" y="85" width="20" height="5" rx="1"></rect>
+                <rect id="StatsBar2" fill="#4F46E5" x="100" y="85" width="20" height="5" rx="1"></rect>
+                <rect id="StatsBar3" fill="#4F46E5" x="170" y="85" width="20" height="5" rx="1"></rect>
+                <rect id="StatsBar4" fill="#4F46E5" x="240" y="85" width="20" height="5" rx="1"></rect>
+                
+                <!-- Campaign Performance -->
+                <rect id="CampaignPanel" fill="#F9FAFB" x="0" y="120" width="270" height="100" rx="4"></rect>
+                <rect id="CampaignTitle" fill="#4F46E5" x="20" y="140" width="150" height="10" rx="2"></rect>
+                
+                <!-- Campaign Progress Bars -->
+                <rect id="ProgressBg1" fill="#E5E7EB" x="20" y="160" width="230" height="8" rx="4"></rect>
+                <rect id="Progress1" fill="#4F46E5" x="20" y="160" width="180" height="8" rx="4"></rect>
+                
+                <rect id="ProgressBg2" fill="#E5E7EB" x="20" y="180" width="230" height="8" rx="4"></rect>
+                <rect id="Progress2" fill="#818CF8" x="20" y="180" width="150" height="8" rx="4"></rect>
+                
+                <rect id="ProgressBg3" fill="#E5E7EB" x="20" y="200" width="230" height="8" rx="4"></rect>
+                <rect id="Progress3" fill="#A5B4FC" x="20" y="200" width="200" height="8" rx="4"></rect>
+            </g>
+        </g>
+        
+        <!-- Decorative Elements -->
+        <circle id="Dot1" fill="#4F46E5" opacity="0.2" cx="50" cy="150" r="20"></circle>
+        <circle id="Dot2" fill="#4F46E5" opacity="0.2" cx="750" cy="450" r="30"></circle>
+        <circle id="Dot3" fill="#4F46E5" opacity="0.2" cx="700" cy="100" r="15"></circle>
+        <circle id="Dot4" fill="#4F46E5" opacity="0.2" cx="100" cy="500" r="25"></circle>
+        
+        <!-- Marketing Elements -->
+        <g id="MarketingIcons" transform="translate(650, 50)">
+            <circle id="IconBg1" fill="#EEF2FF" cx="25" cy="25" r="25"></circle>
+            <rect id="SearchIcon" fill="#4F46E5" x="15" y="15" width="20" height="20" rx="10"></rect>
+        </g>
+        
+        <g id="MarketingIcons2" transform="translate(50, 50)">
+            <circle id="IconBg2" fill="#EEF2FF" cx="25" cy="25" r="25"></circle>
+            <rect id="SocialIcon" fill="#4F46E5" x="15" y="15" width="20" height="20" rx="4"></rect>
+        </g>
+        
+        <g id="MarketingIcons3" transform="translate(700, 500)">
+            <circle id="IconBg3" fill="#EEF2FF" cx="25" cy="25" r="25"></circle>
+            <rect id="EmailIcon" fill="#4F46E5" x="15" y="15" width="20" height="20" rx="2"></rect>
+        </g>
+    </g>
+</svg>

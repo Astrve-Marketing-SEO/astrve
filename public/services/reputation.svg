@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Reputation Management</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4F46E5" offset="0%"></stop>
+            <stop stop-color="#6366F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#EEF2FF" offset="0%"></stop>
+            <stop stop-color="#C7D2FE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Reputation-Management" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="#F9FAFB" x="0" y="0" width="600" height="400" rx="8"></rect>
+        
+        <!-- Google Business Profile -->
+        <g id="GoogleProfile" transform="translate(150, 50)">
+            <rect id="ProfileCard" fill="#FFFFFF" x="0" y="0" width="300" height="300" rx="8" stroke="#E5E7EB" stroke-width="2"></rect>
+            
+            <!-- Header -->
+            <rect id="Header" fill="#F3F4F6" x="0" y="0" width="300" height="60" rx="8 8 0 0"></rect>
+            <rect id="BusinessName" fill="#4F46E5" x="20" y="20" width="150" height="20" rx="4"></rect>
+            <rect id="BusinessType" fill="#A5B4FC" x="20" y="45" width="100" height="10" rx="2"></rect>
+            
+            <!-- Rating -->
+            <g id="Rating" transform="translate(20, 80)">
+                <rect id="RatingLabel" fill="#4F46E5" x="0" y="0" width="60" height="15" rx="2"></rect>
+                
+                <!-- Stars -->
+                <g id="Stars" transform="translate(0, 25)">
+                    <polygon id="Star1" fill="#F59E0B" points="10,0 13,6 20,7 15,12 16,19 10,16 4,19 5,12 0,7 7,6"></polygon>
+                    <polygon id="Star2" fill="#F59E0B" points="35,0 38,6 45,7 40,12 41,19 35,16 29,19 30,12 25,7 32,6"></polygon>
+                    <polygon id="Star3" fill="#F59E0B" points="60,0 63,6 70,7 65,12 66,19 60,16 54,19 55,12 50,7 57,6"></polygon>
+                    <polygon id="Star4" fill="#F59E0B" points="85,0 88,6 95,7 90,12 91,19 85,16 79,19 80,12 75,7 82,6"></polygon>
+                    <polygon id="Star5" fill="#F59E0B" points="110,0 113,6 120,7 115,12 116,19 110,16 104,19 105,12 100,7 107,6"></polygon>
+                </g>
+                
+                <rect id="RatingCount" fill="#6366F1" x="0" y="50" width="80" height="10" rx="2"></rect>
+            </g>
+            
+            <!-- Reviews -->
+            <g id="Reviews" transform="translate(20, 150)">
+                <rect id="ReviewsLabel" fill="#4F46E5" x="0" y="0" width="80" height="15" rx="2"></rect>
+                
+                <!-- Review 1 -->
+                <g id="Review1" transform="translate(0, 25)">
+                    <circle id="Avatar1" fill="#C7D2FE" cx="15" cy="15" r="15"></circle>
+                    <rect id="ReviewerName1" fill="#4F46E5" x="40" y="5" width="80" height="10" rx="2"></rect>
+                    <rect id="ReviewDate1" fill="#A5B4FC" x="40" y="20" width="60" height="8" rx="2"></rect>
+                    <rect id="ReviewText1" fill="#E5E7EB" x="0" y="40" width="260" height="8" rx="2"></rect>
+                    <rect id="ReviewText1-2" fill="#E5E7EB" x="0" y="53" width="240" height="8" rx="2"></rect>
+                </g>
+                
+                <!-- Review 2 -->
+                <g id="Review2" transform="translate(0, 95)">
+                    <circle id="Avatar2" fill="#C7D2FE" cx="15" cy="15" r="15"></circle>
+                    <rect id="ReviewerName2" fill="#4F46E5" x="40" y="5" width="70" height="10" rx="2"></rect>
+                    <rect id="ReviewDate2" fill="#A5B4FC" x="40" y="20" width="50" height="8" rx="2"></rect>
+                    <rect id="ReviewText2" fill="#E5E7EB" x="0" y="40" width="260" height="8" rx="2"></rect>
+                    <rect id="ReviewText2-2" fill="#E5E7EB" x="0" y="53" width="220" height="8" rx="2"></rect>
+                </g>
+            </g>
+        </g>
+        
+        <!-- Decorative Elements -->
+        <g id="Decorations">
+            <circle id="Dot1" fill="#EEF2FF" cx="80" cy="80" r="30"></circle>
+            <circle id="Dot2" fill="#EEF2FF" cx="520" cy="80" r="25"></circle>
+            <circle id="Dot3" fill="#EEF2FF" cx="80" cy="320" r="20"></circle>
+            <circle id="Dot4" fill="#EEF2FF" cx="520" cy="320" r="35"></circle>
+            
+            <!-- Trophy Icon -->
+            <g id="Trophy" transform="translate(520, 200)">
+                <circle id="TrophyBg" fill="url(#linearGradient-2)" cx="30" cy="30" r="30"></circle>
+                <rect id="TrophyBase" fill="#F59E0B" x="20" y="20" width="20" height="30" rx="2"></rect>
+                <rect id="TrophyTop" fill="#F59E0B" x="15" y="15" width="30" height="10" rx="5"></rect>
+                <rect id="TrophyStand" fill="#F59E0B" x="25" y="50" width="10" height="10" rx="2"></rect>
+            </g>
+            
+            <!-- Badge Icon -->
+            <g id="Badge" transform="translate(80, 200)">
+                <circle id="BadgeBg" fill="url(#linearGradient-2)" cx="30" cy="30" r="30"></circle>
+                <circle id="BadgeInner" fill="#FFFFFF" cx="30" cy="30" r="20"></circle>
+                <polygon id="BadgeStar" fill="#F59E0B" points="30,15 34,24 44,25 37,32 39,42 30,37 21,42 23,32 16,25 26,24"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

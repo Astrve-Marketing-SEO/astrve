@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="600px" height="400px" viewBox="0 0 600 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Email Marketing</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#4F46E5" offset="0%"></stop>
+            <stop stop-color="#6366F1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#EEF2FF" offset="0%"></stop>
+            <stop stop-color="#C7D2FE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Email-Marketing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Background" fill="#F9FAFB" x="0" y="0" width="600" height="400" rx="8"></rect>
+        
+        <!-- Email Template -->
+        <g id="EmailTemplate" transform="translate(150, 50)">
+            <rect id="EmailCard" fill="#FFFFFF" x="0" y="0" width="300" height="300" rx="8" stroke="#E5E7EB" stroke-width="2"></rect>
+            
+            <!-- Email Header -->
+            <rect id="EmailHeader" fill="#F3F4F6" x="0" y="0" width="300" height="60" rx="8 8 0 0"></rect>
+            <rect id="Logo" fill="url(#linearGradient-1)" x="20" y="15" width="80" height="30" rx="4"></rect>
+            
+            <!-- Email Content -->
+            <g id="EmailContent" transform="translate(20, 80)">
+                <!-- Headline -->
+                <rect id="Headline" fill="#4F46E5" x="0" y="0" width="200" height="20" rx="2"></rect>
+                
+                <!-- Body Text -->
+                <rect id="BodyText1" fill="#E5E7EB" x="0" y="40" width="260" height="8" rx="2"></rect>
+                <rect id="BodyText2" fill="#E5E7EB" x="0" y="53" width="260" height="8" rx="2"></rect>
+                <rect id="BodyText3" fill="#E5E7EB" x="0" y="66" width="240" height="8" rx="2"></rect>
+                <rect id="BodyText4" fill="#E5E7EB" x="0" y="79" width="250" height="8" rx="2"></rect>
+                
+                <!-- Image Placeholder -->
+                <rect id="ImagePlaceholder" fill="url(#linearGradient-2)" x="0" y="100" width="260" height="100" rx="4"></rect>
+                
+                <!-- CTA Button -->
+                <rect id="CTAButton" fill="url(#linearGradient-1)" x="0" y="220" width="120" height="40" rx="20"></rect>
+                <rect id="ButtonText" fill="#FFFFFF" x="30" y="235" width="60" height="10" rx="2"></rect>
+            </g>
+        </g>
+        
+        <!-- Email Icons -->
+        <g id="EmailIcons" transform="translate(50, 100)">
+            <!-- Envelope Icon -->
+            <g id="Envelope" transform="translate(0, 0)">
+                <rect id="EnvelopeBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <rect id="EnvelopeBody" fill="#4F46E5" x="15" y="20" width="30" height="20" rx="2"></rect>
+                <polygon id="EnvelopeFlap" fill="#4F46E5" points="15,20 30,30 45,20"></polygon>
+            </g>
+            
+            <!-- Chart Icon -->
+            <g id="Chart" transform="translate(0, 80)">
+                <rect id="ChartBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <rect id="ChartBar1" fill="#4F46E5" x="15" y="30" width="5" height="15" rx="1"></rect>
+                <rect id="ChartBar2" fill="#4F46E5" x="25" y="20" width="5" height="25" rx="1"></rect>
+                <rect id="ChartBar3" fill="#4F46E5" x="35" y="15" width="5" height="30" rx="1"></rect>
+                <rect id="ChartBar4" fill="#4F46E5" x="45" y="25" width="5" height="20" rx="1"></rect>
+            </g>
+            
+            <!-- Target Icon -->
+            <g id="Target" transform="translate(0, 160)">
+                <rect id="TargetBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <circle id="TargetOuter" fill="none" stroke="#4F46E5" stroke-width="2" cx="30" cy="30" r="20"></circle>
+                <circle id="TargetMiddle" fill="none" stroke="#4F46E5" stroke-width="2" cx="30" cy="30" r="15"></circle>
+                <circle id="TargetInner" fill="#4F46E5" cx="30" cy="30" r="5"></circle>
+            </g>
+        </g>
+        
+        <!-- Email Icons Right -->
+        <g id="EmailIconsRight" transform="translate(490, 100)">
+            <!-- Clock Icon -->
+            <g id="Clock" transform="translate(0, 0)">
+                <rect id="ClockBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <circle id="ClockFace" fill="none" stroke="#4F46E5" stroke-width="2" cx="30" cy="30" r="20"></circle>
+                <line x1="30" y1="30" x2="30" y2="15" stroke="#4F46E5" stroke-width="2"></line>
+                <line x1="30" y1="30" x2="40" y2="30" stroke="#4F46E5" stroke-width="2"></line>
+            </g>
+            
+            <!-- Person Icon -->
+            <g id="Person" transform="translate(0, 80)">
+                <rect id="PersonBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <circle id="PersonHead" fill="#4F46E5" cx="30" cy="20" r="10"></circle>
+                <rect id="PersonBody" fill="#4F46E5" x="20" y="30" width="20" height="20" rx="10"></rect>
+            </g>
+            
+            <!-- Gear Icon -->
+            <g id="Gear" transform="translate(0, 160)">
+                <rect id="GearBg" fill="url(#linearGradient-2)" x="0" y="0" width="60" height="60" rx="30"></rect>
+                <circle id="GearOuter" fill="none" stroke="#4F46E5" stroke-width="2" cx="30" cy="30" r="15"></circle>
+                <circle id="GearInner" fill="#4F46E5" cx="30" cy="30" r="5"></circle>
+                <line x1="30" y1="10" x2="30" y2="15" stroke="#4F46E5" stroke-width="2"></line>
+                <line x1="30" y1="45" x2="30" y2="50" stroke="#4F46E5" stroke-width="2"></line>
+                <line x1="10" y1="30" x2="15" y2="30" stroke="#4F46E5" stroke-width="2"></line>
+                <line x1="45" y1="30" x2="50" y2="30" stroke="#4F46E5" stroke-width="2"></line>
+            </g>
+        </g>
+    </g>
+</svg>

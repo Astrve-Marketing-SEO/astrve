@@ -86,20 +86,27 @@ export default function Navbar() {
             {navigation.map((item) => (
               <div key={item.name} className="relative">
                 {item.children ? (
-                  <button
-                    onClick={() => handleDropdownToggle(item.name)}
-                    className="flex items-center text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 transition-colors"
-                  >
-                    {item.name}
-                    <svg
-                      className={`ml-2 h-4 w-4 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`}
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
+                  <div className="flex items-center">
+                    <Link
+                      href={item.href}
+                      className="text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 transition-colors mr-1"
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
+                      {item.name}
+                    </Link>
+                    <button
+                      onClick={() => handleDropdownToggle(item.name)}
+                      className="flex items-center text-sm font-semibold leading-6 text-gray-900 hover:text-indigo-600 transition-colors"
+                    >
+                      <svg
+                        className={`ml-1 h-4 w-4 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`}
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+                  </div>
                 ) : (
                   <Link
                     href={item.href}
@@ -161,11 +168,18 @@ export default function Navbar() {
                   <div key={item.name}>
                     {item.children ? (
                       <>
+                        <Link
+                          href={item.href}
+                          className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                          onClick={() => setMobileMenuOpen(false)}
+                        >
+                          {item.name}
+                        </Link>
                         <button
                           onClick={() => handleDropdownToggle(item.name)}
                           className="-mx-3 flex w-full items-center justify-between rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                         >
-                          {item.name}
+                          <span>Services Menu</span>
                           <svg
                             className={`ml-2 h-4 w-4 transition-transform ${activeDropdown === item.name ? 'rotate-180' : ''}`}
                             fill="none"

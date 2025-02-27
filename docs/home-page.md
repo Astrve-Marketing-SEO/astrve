@@ -21,3 +21,12 @@ Important: only make changes on this part.
 Ok now this for below the this section, please do not commit the changes
 
 see changes and then make commit message then commit, do it all in one command
+
+# Prompt 4
+For the next section
+
+Take inspiration from @page.tsx, @page.tsx, @page.tsx follow instructions for making the next section 
+
+
+@page.tsx 
+---

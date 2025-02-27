@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#ffffff"/>
+  
+  <!-- Central Hub - Digital Strategy -->
+  <circle cx="400" cy="300" r="100" fill="#4f46e5" opacity="0.9"/>
+  <text x="400" y="305" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Digital Strategy</text>
+  
+  <!-- Connecting Nodes -->
+  <!-- Social Media -->
+  <circle cx="250" cy="150" r="70" fill="#ec4899" opacity="0.8"/>
+  <text x="250" y="155" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Social Media</text>
+  
+  <!-- SEO -->
+  <circle cx="550" cy="150" r="70" fill="#14b8a6" opacity="0.8"/>
+  <text x="550" y="155" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">SEO</text>
+  
+  <!-- Website -->
+  <circle cx="200" cy="400" r="70" fill="#f97316" opacity="0.8"/>
+  <text x="200" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Website</text>
+  
+  <!-- Email Marketing -->
+  <circle cx="600" cy="400" r="70" fill="#8b5cf6" opacity="0.8"/>
+  <text x="600" y="405" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Email Marketing</text>
+  
+  <!-- Analytics -->
+  <circle cx="400" cy="500" r="70" fill="#06b6d4" opacity="0.8"/>
+  <text x="400" y="505" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">Analytics</text>
+  
+  <!-- Connection Lines -->
+  <line x1="320" y1="230" x2="250" y2="180" stroke="#4f46e5" stroke-width="3" opacity="0.6"/>
+  <line x1="480" y1="230" x2="550" y2="180" stroke="#4f46e5" stroke-width="3" opacity="0.6"/>
+  <line x1="320" y1="370" x2="250" y2="400" stroke="#4f46e5" stroke-width="3" opacity="0.6"/>
+  <line x1="480" y1="370" x2="550" y2="400" stroke="#4f46e5" stroke-width="3" opacity="0.6"/>
+  <line x1="400" y1="400" x2="400" y2="450" stroke="#4f46e5" stroke-width="3" opacity="0.6"/>
+  
+  <!-- Cross Connections -->
+  <line x1="250" y1="200" x2="550" y2="200" stroke="#4f46e5" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="250" y1="200" x2="200" y2="350" stroke="#4f46e5" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="550" y1="200" x2="600" y2="350" stroke="#4f46e5" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="200" y1="450" x2="400" y2="500" stroke="#4f46e5" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="600" y1="450" x2="400" y2="500" stroke="#4f46e5" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="250" y1="200" x2="400" y2="500" stroke="#4f46e5" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  <line x1="550" y1="200" x2="400" y2="500" stroke="#4f46e5" stroke-width="2" opacity="0.4" stroke-dasharray="5,5"/>
+  
+  <!-- Icons -->
+  <!-- Social Media Icon -->
+  <path d="M250 130 L260 120 L270 130 L260 140 Z" fill="white"/>
+  <circle cx="250" cy="140" r="5" fill="white"/>
+  <path d="M235 135 L245 145" stroke="white" stroke-width="2"/>
+  <path d="M255 145 L265 135" stroke="white" stroke-width="2"/>
+  
+  <!-- SEO Icon -->
+  <circle cx="550" cy="140" r="10" fill="none" stroke="white" stroke-width="2"/>
+  <path d="M558 148 L568 158" stroke="white" stroke-width="3"/>
+  
+  <!-- Website Icon -->
+  <rect x="185" y="390" width="30" height="20" fill="none" stroke="white" stroke-width="2" rx="2"/>
+  <line x1="190" y1="395" x2="210" y2="395" stroke="white" stroke-width="1"/>
+  <line x1="190" y1="400" x2="205" y2="400" stroke="white" stroke-width="1"/>
+  <line x1="190" y1="405" x2="200" y2="405" stroke="white" stroke-width="1"/>
+  
+  <!-- Email Icon -->
+  <rect x="585" y="390" width="30" height="20" fill="none" stroke="white" stroke-width="2" rx="2"/>
+  <path d="M585 390 L600 400 L615 390" stroke="white" stroke-width="1" fill="none"/>
+  
+  <!-- Analytics Icon -->
+  <path d="M385 495 L395 485 L405 490 L415 480" stroke="white" stroke-width="2" fill="none"/>
+</svg>

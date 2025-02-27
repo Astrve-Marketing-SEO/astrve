@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle grid pattern -->
+  <rect width="800" height="600" fill="#F8FAFC" />
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <rect width="40" height="40" fill="#F8FAFC" />
+    <circle cx="20" cy="20" r="1" fill="#E2E8F0" />
+  </pattern>
+  <rect width="800" height="600" fill="url(#grid)" />
+
+  <!-- Decorative elements -->
+  <circle cx="150" cy="150" r="50" fill="#EEF2FF" />
+  <circle cx="650" cy="450" r="70" fill="#EEF2FF" />
+  <circle cx="550" cy="100" r="30" fill="#EEF2FF" />
+  <circle cx="250" cy="500" r="40" fill="#EEF2FF" />
+
+  <!-- Social Media Platform Icons -->
+  <!-- Facebook -->
+  <circle cx="200" cy="300" r="40" fill="#4F46E5" />
+  <path d="M215 285H207.5C205.5 285 205 286 205 288V295H215L214 305H205V330H195V305H185V295H195V287.5C195 280 198.5 275 207.5 275H215V285Z" fill="white" />
+
+  <!-- Instagram -->
+  <circle cx="300" cy="300" r="40" fill="#6366F1" />
+  <rect x="280" y="280" width="40" height="40" rx="10" stroke="white" stroke-width="3" />
+  <circle cx="300" cy="300" r="10" stroke="white" stroke-width="3" />
+  <circle cx="315" cy="285" r="2" fill="white" />
+
+  <!-- Twitter -->
+  <circle cx="400" cy="300" r="40" fill="#818CF8" />
+  <path d="M415 290C412.5 291.5 409.5 292.5 406.5 293C405 291.5 403 290.5 400.5 290C396 290 392.5 293.5 392.5 298C392.5 298.5 392.5 299 392.5 299.5C385 299.5 378.5 296 374 290.5C373.5 291.5 373 292.5 373 294C373 296.5 374.5 299 377 300.5C375.5 300.5 374 300 372.5 299.5V299.5C372.5 303.5 375 306.5 378.5 307.5C378 307.5 377 307.5 376.5 307.5C376 307.5 375.5 307.5 375 307.5C376 310.5 379 313 382.5 313C379.5 315 376 316 372 316C371.5 316 371 316 370.5 316C374 318 378 319 382.5 319C400.5 319 410 304 410 291V290C412.5 288.5 414.5 286.5 416 284.5C414 285.5 411.5 286 409 286.5C412 285 414 282.5 415 290Z" fill="white" />
+
+  <!-- LinkedIn -->
+  <circle cx="500" cy="300" r="40" fill="#A5B4FC" />
+  <path d="M485 275H515C517.5 275 520 277.5 520 280V320C520 322.5 517.5 325 515 325H485C482.5 325 480 322.5 480 320V280C480 277.5 482.5 275 485 275ZM490 315H500V295C500 295 500.5 290 505 290C509.5 290 510 295 510 295V315H520V295C520 287.5 515 285 510 285C505 285 500 287.5 500 290V285H490V315ZM495 280C497.5 280 500 282.5 500 285C500 287.5 497.5 290 495 290C492.5 290 490 287.5 490 285C490 282.5 492.5 280 495 280Z" fill="white" />
+
+  <!-- Connection Lines -->
+  <line x1="200" y1="340" x2="300" y2="340" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5" />
+  <line x1="300" y1="340" x2="400" y2="340" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5" />
+  <line x1="400" y1="340" x2="500" y2="340" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5 5" />
+
+  <!-- People Icons -->
+  <rect x="180" y="370" width="40" height="80" rx="20" fill="#4F46E5" />
+  <circle cx="200" cy="350" r="20" fill="#4F46E5" />
+
+  <rect x="280" y="370" width="40" height="80" rx="20" fill="#6366F1" />
+  <circle cx="300" cy="350" r="20" fill="#6366F1" />
+
+  <rect x="380" y="370" width="40" height="80" rx="20" fill="#818CF8" />
+  <circle cx="400" cy="350" r="20" fill="#818CF8" />
+
+  <rect x="480" y="370" width="40" height="80" rx="20" fill="#A5B4FC" />
+  <circle cx="500" cy="350" r="20" fill="#A5B4FC" />
+
+  <!-- Speech Bubbles -->
+  <path d="M220 250C220 244.477 224.477 240 230 240H270C275.523 240 280 244.477 280 250V270C280 275.523 275.523 280 270 280H230C224.477 280 220 275.523 220 270V250Z" fill="white" stroke="#4F46E5" stroke-width="2" />
+  <path d="M230 280L225 290L235 285" fill="white" />
+  <path d="M230 280L225 290L235 285" stroke="#4F46E5" stroke-width="2" />
+
+  <path d="M320 220C320 214.477 324.477 210 330 210H370C375.523 210 380 214.477 380 220V240C380 245.523 375.523 250 370 250H330C324.477 250 320 245.523 320 240V220Z" fill="white" stroke="#6366F1" stroke-width="2" />
+  <path d="M330 250L325 260L335 255" fill="white" />
+  <path d="M330 250L325 260L335 255" stroke="#6366F1" stroke-width="2" />
+
+  <path d="M420 250C420 244.477 424.477 240 430 240H470C475.523 240 480 244.477 480 250V270C480 275.523 475.523 280 470 280H430C424.477 280 420 275.523 420 270V250Z" fill="white" stroke="#818CF8" stroke-width="2" />
+  <path d="M430 280L425 290L435 285" fill="white" />
+  <path d="M430 280L425 290L435 285" stroke="#818CF8" stroke-width="2" />
+
+  <path d="M520 220C520 214.477 524.477 210 530 210H570C575.523 210 580 214.477 580 220V240C580 245.523 575.523 250 570 250H530C524.477 250 520 245.523 520 240V220Z" fill="white" stroke="#A5B4FC" stroke-width="2" />
+  <path d="M530 250L525 260L535 255" fill="white" />
+  <path d="M530 250L525 260L535 255" stroke="#A5B4FC" stroke-width="2" />
+</svg>

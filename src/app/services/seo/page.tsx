@@ -98,16 +98,119 @@ export default function SEOPage() {
               </div>
             </div>
             
-            {/* Right column - Image */}
+            {/* Right column - Interactive Visualization */}
             <div className="relative">
               <div className="absolute -right-4 top-1/2 w-72 h-72 bg-indigo-100 rounded-full blur-3xl opacity-70 -z-10"></div>
-              <Image
-                src="/services/seo.svg"
-                alt="SEO services illustration"
-                width={1000}
-                height={600}
-                className="w-full h-auto object-cover rounded-lg shadow-xl"
-              />
+              
+              {/* SEO Performance Dashboard Card */}
+              <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-6 relative overflow-hidden">
+                {/* Card Header */}
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-3">
+                    <div className="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 text-indigo-600">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                      </svg>
+                    </div>
+                    <h3 className="font-semibold text-gray-900">SEO Performance</h3>
+                  </div>
+                  <div className="flex items-center gap-1 text-xs font-medium text-indigo-600 bg-indigo-50 px-2 py-1 rounded-full">
+                    <span className="h-2 w-2 rounded-full bg-indigo-600"></span>
+                    <span>Live Data</span>
+                  </div>
+                </div>
+                
+                {/* Performance Metrics */}
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  {/* Metric 1 */}
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <div className="text-sm text-gray-500 mb-1">Search Visibility</div>
+                    <div className="flex items-end gap-2">
+                      <div className="text-2xl font-bold text-gray-900">78%</div>
+                      <div className="flex items-center text-xs font-medium text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                          <path fillRule="evenodd" d="M12.577 4.878a.75.75 0 0 1 .919-.53l4.78 1.281a.75.75 0 0 1 .531.919l-1.281 4.78a.75.75 0 0 1-1.449-.387l.81-3.022a19.407 19.407 0 0 0-5.594 5.203.75.75 0 0 1-1.139.093L7 10.06l-4.72 4.72a.75.75 0 0 1-1.06-1.061l5.25-5.25a.75.75 0 0 1 1.06 0l3.074 3.073a20.923 20.923 0 0 1 5.545-4.931l-3.042-.815a.75.75 0 0 1-.53-.919Z" clipRule="evenodd" />
+                        </svg>
+                        +12%
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Metric 2 */}
+                  <div className="bg-gray-50 rounded-lg p-4">
+                    <div className="text-sm text-gray-500 mb-1">Keyword Rankings</div>
+                    <div className="flex items-end gap-2">
+                      <div className="text-2xl font-bold text-gray-900">32</div>
+                      <div className="flex items-center text-xs font-medium text-green-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
+                          <path fillRule="evenodd" d="M12.577 4.878a.75.75 0 0 1 .919-.53l4.78 1.281a.75.75 0 0 1 .531.919l-1.281 4.78a.75.75 0 0 1-1.449-.387l.81-3.022a19.407 19.407 0 0 0-5.594 5.203.75.75 0 0 1-1.139.093L7 10.06l-4.72 4.72a.75.75 0 0 1-1.06-1.061l5.25-5.25a.75.75 0 0 1 1.06 0l3.074 3.073a20.923 20.923 0 0 1 5.545-4.931l-3.042-.815a.75.75 0 0 1-.53-.919Z" clipRule="evenodd" />
+                        </svg>
+                        +8
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Traffic Graph */}
+                <div className="bg-white rounded-lg border border-gray-100 p-4 mb-6">
+                  <div className="flex justify-between items-center mb-4">
+                    <h4 className="text-sm font-medium text-gray-700">Organic Traffic</h4>
+                    <div className="text-xs text-gray-500">Last 30 days</div>
+                  </div>
+                  
+                  {/* Graph placeholder */}
+                  <div className="h-32 relative">
+                    {/* Graph bars */}
+                    <div className="absolute bottom-0 left-0 w-full h-full flex items-end justify-between px-1">
+                      {Array.from({ length: 12 }).map((_, i) => (
+                        <div 
+                          key={i} 
+                          className="w-1.5 bg-indigo-500 rounded-t-sm"
+                          style={{ 
+                            height: `${30 + Math.random() * 70}%`,
+                            opacity: i === 11 ? '1' : '0.7'
+                          }}
+                        ></div>
+                      ))}
+                    </div>
+                    
+                    {/* Trend line */}
+                    <div className="absolute bottom-0 left-0 w-full h-full">
+                      <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path
+                          d="M0,70 Q10,65 20,60 T40,50 T60,40 T80,30 T100,20"
+                          fill="none"
+                          stroke="rgb(99, 102, 241)"
+                          strokeWidth="2"
+                          strokeDasharray="3,2"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Quick metrics */}
+                <div className="grid grid-cols-3 gap-2">
+                  <div className="text-center py-2 px-1 rounded-lg bg-indigo-50">
+                    <div className="text-xs text-gray-500 mb-1">CTR</div>
+                    <div className="text-sm font-semibold text-gray-900">4.8%</div>
+                  </div>
+                  <div className="text-center py-2 px-1 rounded-lg bg-indigo-50">
+                    <div className="text-xs text-gray-500 mb-1">Sessions</div>
+                    <div className="text-sm font-semibold text-gray-900">2.4k</div>
+                  </div>
+                  <div className="text-center py-2 px-1 rounded-lg bg-indigo-50">
+                    <div className="text-xs text-gray-500 mb-1">Backlinks</div>
+                    <div className="text-sm font-semibold text-gray-900">157</div>
+                  </div>
+                </div>
+                
+                {/* Gradient overlay at bottom */}
+                <div className="absolute bottom-0 left-0 w-full h-6 bg-gradient-to-t from-white to-transparent"></div>
+              </div>
+              
+              {/* Bottom decorative element */}
+              <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-indigo-600/10 rounded-full blur-xl"></div>
             </div>
           </div>
         </div>
@@ -353,7 +456,7 @@ export default function SEOPage() {
                 <div className="relative pl-16 group">
                   <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-600 shadow-md transform transition-transform group-hover:scale-105">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5 10.5 21.75 21.75 6.75" />
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold leading-8 text-gray-900">
@@ -367,7 +470,7 @@ export default function SEOPage() {
                 <div className="relative pl-16 group">
                   <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-600 shadow-md transform transition-transform group-hover:scale-105">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-white">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M12 21a9 9 0 1 1 8.716-6.747M12 21a9 9 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
                     </svg>
                   </div>
                   <h3 className="text-lg font-semibold leading-8 text-gray-900">

@@ -14,7 +14,6 @@ const topBarLinks = [
 
 const navigation = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
   { 
     name: 'Services', 
     href: '/services',
@@ -26,6 +25,8 @@ const navigation = [
       { name: 'SEO', href: '/services/seo' }
     ]
   },
+  { name: 'Web Hosting', href: '/hosting' },
+  { name: 'About', href: '/about' },
   { name: 'Portfolio', href: '/portfolio' },
   { name: 'Pricing', href: '/pricing' }
 ];

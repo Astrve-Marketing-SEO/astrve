@@ -17,10 +17,10 @@ export default function HomePage() {
   return (
     <PageLayout>
       {/* Hero section */}
-      <div className="relative isolate px-6 pt-24 lg:pt-28">
+      <div className="relative isolate px-6 pt-24 lg:pt-28 font-serif bg-rich-black">
         {/* Background pattern */}
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-indigo-200 to-indigo-100 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-gold-300 to-gold-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
         </div>
 
         <div className="mx-auto max-w-7xl">
@@ -28,126 +28,130 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
             {/* Left column - Text content */}
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 text-indigo-700 text-sm font-medium mb-6">
-                <span className="flex-1">Data-Driven Marketing Agency</span>
-                <div className="w-px h-4 bg-indigo-200"></div>
-                <span className="text-indigo-500">98% Client Satisfaction</span>
+              {/* Badge with improved contrast */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rich-dark text-foreground text-sm font-medium mb-6 border border-gold-500/30">
+                <span className="flex-1 font-sans">Data-Driven Marketing Agency</span>
+                <div className="w-px h-4 bg-gold-400"></div>
+                <span className="text-gold-400 font-sans font-semibold">98% Client Satisfaction</span>
               </div>
               
-              <h1 className="relative space-y-3">
-                <div className="absolute -left-8 -top-8 w-24 h-24 bg-indigo-100 rounded-full blur-2xl opacity-60"></div>
-                <div className="absolute right-8 bottom-8 w-32 h-32 bg-indigo-50 rounded-full blur-3xl opacity-60"></div>
+              {/* Heading with improved contrast */}
+              <h1 className="relative space-y-3 font-serif">
+                <div className="absolute -left-8 -top-8 w-24 h-24 bg-gold-100 rounded-full blur-2xl opacity-40"></div>
+                <div className="absolute right-8 bottom-8 w-32 h-32 bg-gold-50 rounded-full blur-3xl opacity-40"></div>
                 <div className="relative">
-                  <span className="text-3xl lg:text-5xl font-medium tracking-tight text-gray-900">Stop Guessing,</span>
+                  <span className="text-3xl lg:text-5xl font-medium tracking-tight text-foreground drop-shadow-sm">Stop Guessing,</span>
                 </div>
                 <div className="relative">
-                  <span className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-transparent">
+                  <span className="text-4xl lg:text-6xl font-bold gold-gradient-text drop-shadow-md">
                     Start Growing
                   </span>
                 </div>
                 <div className="relative pt-2">
-                  <span className="text-2xl lg:text-4xl font-medium tracking-tight text-gray-800">
+                  <span className="text-2xl lg:text-4xl font-medium tracking-tight text-foreground drop-shadow-sm">
                     Data-Driven Digital Marketing
                     <br />
                     That
                     <span className="relative inline-block px-2">
                       <span className="relative z-10">Works</span>
-                      <div className="absolute -bottom-1 left-0 w-full h-3 bg-indigo-100 -rotate-1"></div>
+                      <div className="absolute -bottom-1 left-0 w-full h-3 bg-gold-400/80 -rotate-1"></div>
                     </span>
                   </span>
                 </div>
               </h1>
               
+              {/* Paragraph with improved contrast */}
               <div className="relative mt-8">
-                <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-indigo-500 to-transparent opacity-20"></div>
-                <p className="pl-6 text-lg leading-8 text-gray-600 max-w-2xl">
+                <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-gold-400 to-transparent opacity-40"></div>
+                <p className="pl-6 text-lg leading-8 text-gray-300 max-w-2xl font-sans">
                   Your digital presence should be more than just a 'website.' It should be your brand's online heartbeat—where customers connect, engage, and discover the real value you offer.
                 </p>
               </div>
               
+              {/* Buttons with improved contrast */}
               <div className="relative mt-10 flex flex-wrap gap-x-6 gap-y-4">
-                <div className="absolute -left-4 top-1/2 w-20 h-20 bg-indigo-50 rounded-full blur-2xl opacity-60"></div>
+                <div className="absolute -left-4 top-1/2 w-20 h-20 bg-gold-300/20 rounded-full blur-2xl opacity-60"></div>
                 <Link
                   href="/services"
-                  className="relative rounded-full bg-gradient-to-r from-indigo-600 to-indigo-500 px-8 py-4 text-base font-semibold text-white shadow-lg hover:shadow-indigo-100 hover:from-indigo-500 hover:to-indigo-400 transition-all duration-200 flex items-center gap-2 group"
+                  className="relative rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-8 py-4 text-base font-semibold text-rich-black shadow-lg hover:shadow-gold-500/20 hover:from-gold-400 hover:to-gold-500 transition-all duration-200 flex items-center gap-2 group font-serif border border-gold-400"
                 >
-                  <span>Services</span>
-                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <span className="text-rich-black drop-shadow-sm font-bold">Services</span>
+                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-rich-black" />
                 </Link>
                 <Link
                   href="/pricing"
-                  className="relative rounded-full px-8 py-4 text-base font-semibold text-gray-900 shadow-lg shadow-gray-100 hover:shadow-md transition-all duration-200 flex items-center gap-2 bg-white/80 backdrop-blur-sm group border border-gray-100"
+                  className="relative rounded-full px-8 py-4 text-base font-semibold shadow-lg hover:shadow-gold-500/20 transition-all duration-200 flex items-center gap-2 bg-rich-dark backdrop-blur-sm group border border-gold-300/50 font-serif"
                 >
-                  <span>Pricing</span>
-                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  <span className="text-gold-300 font-bold">Pricing</span>
+                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-gold-300" />
                 </Link>
               </div>
 
-              {/* Stats */}
-              <div className="relative mt-16 grid grid-cols-3 gap-6 py-8 border-y border-gray-100/50">
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-50/50 via-transparent to-indigo-50/50 opacity-50 blur-xl"></div>
+              {/* Stats with improved contrast */}
+              <div className="relative mt-16 grid grid-cols-3 gap-6 py-8 border-y border-gold-500/20 font-sans">
+                <div className="absolute inset-0 bg-gradient-to-r from-gold-500/10 via-transparent to-gold-500/10 opacity-50 blur-xl"></div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900">250%</div>
-                  <div className="text-sm text-gray-600">Average ROI</div>
+                  <div className="text-2xl font-bold text-foreground">250%</div>
+                  <div className="text-sm text-gray-300">Average ROI</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900">1.2M+</div>
-                  <div className="text-sm text-gray-600">Leads Generated</div>
+                  <div className="text-2xl font-bold text-foreground">1.2M+</div>
+                  <div className="text-sm text-gray-300">Leads Generated</div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-gray-900">98%</div>
-                  <div className="text-sm text-gray-600">Client Retention</div>
+                  <div className="text-2xl font-bold text-foreground">98%</div>
+                  <div className="text-sm text-gray-300">Client Retention</div>
                 </div>
               </div>
             </div>
 
             {/* Right column - Interactive visualization */}
             <div className="relative lg:ml-auto">
-              <div className="absolute inset-0 -m-8 rounded-3xl bg-gradient-to-tr from-indigo-50 to-transparent opacity-40 blur-2xl"></div>
+              <div className="absolute inset-0 -m-8 rounded-3xl bg-gradient-to-tr from-gold-300/30 to-transparent opacity-40 blur-2xl"></div>
               <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl bg-indigo-50 p-8 shadow-xl">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-indigo-100 to-indigo-50 opacity-30"></div>
+                <div className="relative overflow-hidden rounded-2xl bg-rich-dark p-8 shadow-xl border border-gold-500/20">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-gold-400/20 to-gold-300/10 opacity-30"></div>
                   <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.5))] -z-10"></div>
                   
-                  <div className="relative grid grid-cols-6 gap-4">
-                    {/* Top row - Analytics dashboard header */}
-                    <div className="col-span-6 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                  <div className="relative grid grid-cols-6 gap-4 font-sans">
+                    {/* Dashboard header with improved contrast */}
+                    <div className="col-span-6 overflow-hidden rounded-lg bg-rich-gray p-3 shadow-sm border border-gold-500/20">
                       <div className="flex justify-between items-center">
                         <div className="flex items-center gap-3">
-                          <div className="h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center">
-                            <BarChart3 className="h-5 w-5 text-indigo-600" />
+                          <div className="h-10 w-10 rounded-full bg-gold-100 flex items-center justify-center">
+                            <BarChart3 className="h-5 w-5 text-gold-700" />
                           </div>
                           <div>
-                            <div className="text-lg font-semibold text-gray-800">Marketing Dashboard</div>
-                            <div className="text-xs text-gray-500">Comprehensive analytics</div>
+                            <div className="text-lg font-semibold text-foreground">Marketing Dashboard</div>
+                            <div className="text-xs text-gray-300">Comprehensive analytics</div>
                           </div>
                         </div>
                         <div className="flex items-center gap-2">
                           <div className="h-2 w-2 rounded-full bg-green-500"></div>
-                          <span className="text-xs font-medium text-green-600">Live</span>
+                          <span className="text-xs font-medium text-green-500">Live</span>
                         </div>
                       </div>
                     </div>
                     
                     {/* Middle section - Performance graph */}
-                    <div className="col-span-4 h-40 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                    <div className="col-span-4 h-40 overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
                       <div className="flex justify-between items-center mb-2">
-                        <div className="text-sm font-medium text-gray-600">Conversion Rate</div>
-                        <div className="text-sm font-semibold text-indigo-600">+32.5% MoM</div>
+                        <div className="text-sm font-medium text-gray-300">Conversion Rate</div>
+                        <div className="text-sm font-semibold text-gold-400">+32.5% MoM</div>
                       </div>
                       <div className="relative h-28">
                         {/* Area chart */}
                         <svg className="absolute inset-0 h-full w-full" preserveAspectRatio="none">
                           <defs>
                             <linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="0%" stopColor="rgb(99, 102, 241)" stopOpacity="0.5" />
-                              <stop offset="100%" stopColor="rgb(99, 102, 241)" stopOpacity="0" />
+                              <stop offset="0%" stopColor="rgb(255, 186, 0)" stopOpacity="0.5" />
+                              <stop offset="100%" stopColor="rgb(255, 186, 0)" stopOpacity="0" />
                             </linearGradient>
                           </defs>
                           <path 
                             d="M0,56 L20,48 L40,52 L60,40 L80,44 L100,28 L120,32 L140,24 L160,16 L180,20 L200,8 L220,12 L240,4 L260,0 L280,8 L300,4 L320,12 L340,8 L360,16 L380,8 L400,12 L420,4 L440,8 L460,4 L480,0 L500,8 L520,4 L540,8 L560,4 L580,8 L600,4"
                             fill="url(#chart-gradient)"
-                            stroke="rgb(99, 102, 241)"
+                            stroke="rgb(255, 186, 0)"
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"
@@ -158,7 +162,7 @@ export default function HomePage() {
                         {/* Horizontal grid lines */}
                         <div className="absolute inset-0 grid grid-rows-4 h-full w-full">
                           {[0, 1, 2, 3].map((i) => (
-                            <div key={i} className="border-t border-gray-100 w-full"></div>
+                            <div key={i} className="border-t border-gold-500/10 w-full"></div>
                           ))}
                         </div>
                       </div>
@@ -166,22 +170,22 @@ export default function HomePage() {
                     
                     {/* Side metrics */}
                     <div className="col-span-2 grid grid-rows-2 gap-4">
-                      <div className="overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                      <div className="overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
                         <div className="flex items-center justify-between">
                           <div>
-                            <div className="text-sm font-medium text-gray-600">Engagement</div>
-                            <div className="text-lg font-semibold text-gray-900">87.4%</div>
+                            <div className="text-sm font-medium text-gray-300">Engagement</div>
+                            <div className="text-lg font-semibold text-foreground">87.4%</div>
                           </div>
                           <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
                             <ArrowUpRight className="h-4 w-4 text-green-600" />
                           </div>
                         </div>
                       </div>
-                      <div className="overflow-hidden rounded-lg bg-white p-3 shadow-sm">
+                      <div className="overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
                         <div className="flex items-center justify-between">
                           <div>
-                            <div className="text-sm font-medium text-gray-600">Bounce Rate</div>
-                            <div className="text-lg font-semibold text-gray-900">12.8%</div>
+                            <div className="text-sm font-medium text-gray-300">Bounce Rate</div>
+                            <div className="text-lg font-semibold text-foreground">12.8%</div>
                           </div>
                           <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
                             <ArrowUpRight className="h-4 w-4 text-green-600 rotate-180" />
@@ -191,46 +195,46 @@ export default function HomePage() {
                     </div>
                     
                     {/* Bottom row - Channel distribution */}
-                    <div className="col-span-3 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
-                      <div className="text-sm font-medium text-gray-600 mb-2">Channel Mix</div>
+                    <div className="col-span-3 overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
+                      <div className="text-sm font-medium text-gray-300 mb-2">Channel Mix</div>
                       <div className="space-y-2">
                         <div>
                           <div className="flex justify-between text-xs mb-1">
-                            <span>Organic</span>
-                            <span className="font-medium">42%</span>
+                            <span className="text-gray-300">Organic</span>
+                            <span className="font-medium text-foreground">42%</span>
                           </div>
-                          <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
-                            <div className="h-full bg-indigo-500 rounded-full" style={{ width: '42%' }}></div>
+                          <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden">
+                            <div className="h-full bg-gold-500 rounded-full" style={{ width: '42%' }}></div>
                           </div>
                         </div>
                         <div>
                           <div className="flex justify-between text-xs mb-1">
-                            <span>Social</span>
-                            <span className="font-medium">28%</span>
+                            <span className="text-gray-300">Social</span>
+                            <span className="font-medium text-foreground">28%</span>
                           </div>
-                          <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
-                            <div className="h-full bg-indigo-400 rounded-full" style={{ width: '28%' }}></div>
+                          <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden">
+                            <div className="h-full bg-gold-400 rounded-full" style={{ width: '28%' }}></div>
                           </div>
                         </div>
                       </div>
                     </div>
                     
                     {/* ROI calculator */}
-                    <div className="col-span-3 overflow-hidden rounded-lg bg-white p-3 shadow-sm">
-                      <div className="text-sm font-medium text-gray-600 mb-1">ROI</div>
+                    <div className="col-span-3 overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
+                      <div className="text-sm font-medium text-gray-300 mb-1">ROI</div>
                       <div className="flex items-center justify-between">
-                        <div className="text-xs text-gray-500">Input</div>
-                        <div className="text-xs font-medium text-gray-700">$10k</div>
+                        <div className="text-xs text-gray-400">Input</div>
+                        <div className="text-xs font-medium text-foreground">$10k</div>
                       </div>
-                      <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden my-1">
-                        <div className="h-full bg-indigo-500 rounded-full" style={{ width: '100%' }}></div>
+                      <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden my-1">
+                        <div className="h-full bg-gold-500 rounded-full" style={{ width: '100%' }}></div>
                       </div>
                       <div className="flex items-center justify-between">
-                        <div className="text-xs text-gray-500">Output</div>
-                        <div className="text-xs font-medium text-green-600">$35k</div>
+                        <div className="text-xs text-gray-400">Output</div>
+                        <div className="text-xs font-medium text-gold-400">$35k</div>
                       </div>
-                      <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden my-1">
-                        <div className="h-full bg-green-500 rounded-full" style={{ width: '100%' }}></div>
+                      <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden my-1">
+                        <div className="h-full bg-gold-400 rounded-full" style={{ width: '100%' }}></div>
                       </div>
                     </div>
                   </div>
@@ -242,13 +246,13 @@ export default function HomePage() {
 
         {/* Background pattern */}
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-          <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-indigo-200 to-indigo-100 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
+          <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-gold-300 to-gold-200 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
         </div>
       </div>
 
       {/* Value Proposition Section */}
       <div className="relative overflow-hidden">
-        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-indigo-50/30 rounded-full blur-3xl opacity-50 -z-10"></div>
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gold-50/30 rounded-full blur-3xl opacity-50 -z-10"></div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-24">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Column - Content */}
@@ -256,7 +260,7 @@ export default function HomePage() {
               <div className="max-w-xl space-y-6">
                 <h2 className="text-[32px] font-medium text-gray-900 leading-tight tracking-tight">
                   We combine captivating design, strategic marketing, and
-                  <span className="block mt-1 text-indigo-600">relentless optimization</span>
+                  <span className="block mt-1 text-gold-600">relentless optimization</span>
                   to turn casual visitors into loyal customers.
                 </h2>
                 
@@ -267,7 +271,7 @@ export default function HomePage() {
                 <div className="pt-2">
                   <Link
                     href="#calendly"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-500 transition-all duration-200 group"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-gold-600 text-white rounded-full text-sm font-medium hover:bg-gold-500 transition-all duration-200 group"
                   >
                     Grow My Business Today!
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -282,24 +286,24 @@ export default function HomePage() {
                 {/* Abstract Data Elements */}
                 <div className="absolute inset-0">
                   {/* Network Nodes */}
-                  <div className="absolute left-1/4 top-1/4 w-3 h-3 bg-indigo-200 rounded-full animate-pulse"></div>
-                  <div className="absolute right-1/3 top-1/2 w-3 h-3 bg-indigo-300 rounded-full animate-pulse delay-75"></div>
-                  <div className="absolute left-1/2 bottom-1/3 w-3 h-3 bg-indigo-400 rounded-full animate-pulse delay-150"></div>
+                  <div className="absolute left-1/4 top-1/4 w-3 h-3 bg-gold-200 rounded-full animate-pulse"></div>
+                  <div className="absolute right-1/3 top-1/2 w-3 h-3 bg-gold-300 rounded-full animate-pulse delay-75"></div>
+                  <div className="absolute left-1/2 bottom-1/3 w-3 h-3 bg-gold-400 rounded-full animate-pulse delay-150"></div>
                   
                   {/* Connection Lines */}
-                  <div className="absolute left-1/4 top-1/4 w-[200px] h-[1px] bg-gradient-to-r from-indigo-200 to-transparent transform rotate-45"></div>
-                  <div className="absolute right-1/3 top-1/2 w-[150px] h-[1px] bg-gradient-to-l from-indigo-200 to-transparent transform -rotate-45"></div>
+                  <div className="absolute left-1/4 top-1/4 w-[200px] h-[1px] bg-gradient-to-r from-gold-200 to-transparent transform rotate-45"></div>
+                  <div className="absolute right-1/3 top-1/2 w-[150px] h-[1px] bg-gradient-to-l from-gold-200 to-transparent transform -rotate-45"></div>
                   
                   {/* Data Visualization Elements */}
                   <div className="absolute left-1/4 bottom-1/4 w-32 h-32">
-                    <div className="w-full h-full border-4 border-indigo-100 rounded-xl transform rotate-45"></div>
-                    <div className="absolute inset-2 border-4 border-indigo-50 rounded-lg transform rotate-45"></div>
+                    <div className="w-full h-full border-4 border-gold-100 rounded-xl transform rotate-45"></div>
+                    <div className="absolute inset-2 border-4 border-gold-50 rounded-lg transform rotate-45"></div>
                   </div>
                   
                   <div className="absolute right-1/4 top-1/3 w-40 h-40">
-                    <div className="w-full h-full border border-indigo-100/50 rounded-full"></div>
-                    <div className="absolute inset-4 border border-indigo-100/30 rounded-full"></div>
-                    <div className="absolute inset-8 border border-indigo-100/20 rounded-full"></div>
+                    <div className="w-full h-full border border-gold-100/50 rounded-full"></div>
+                    <div className="absolute inset-4 border border-gold-100/30 rounded-full"></div>
+                    <div className="absolute inset-8 border border-gold-100/20 rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -309,13 +313,13 @@ export default function HomePage() {
       </div>
       
       {/* Services section */}
-      <div className="py-24 sm:py-32 bg-gradient-to-b from-white to-indigo-50/20">
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-white to-gold-50/20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           {/* Section Header */}
           <div className="max-w-2xl">
             <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
               Our Alchemy: Services That Turn Heads
-              <span className="block text-indigo-600">and Drive Results</span>
+              <span className="block text-gold-600">and Drive Results</span>
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Whether you need a bold new website, an engaging social media presence, or a powerhouse reputation on Google,
@@ -327,7 +331,7 @@ export default function HomePage() {
           <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-3">
             {/* Service Cards */}
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-gold-100 to-gold-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
               <ServiceCard
                 icon={ComputerDesktopIcon}
                 title="Stunning Websites That Convert"
@@ -337,7 +341,7 @@ export default function HomePage() {
             </div>
             
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-gold-100 to-gold-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
               <ServiceCard
                 icon={ShareIcon}
                 title="Ignite Your Social Presence"
@@ -347,7 +351,7 @@ export default function HomePage() {
             </div>
             
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-indigo-100 to-indigo-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-gold-100 to-gold-50/50 rounded-2xl -z-10 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
               <ServiceCard
                 icon={MapPinIcon}
                 title="Dominate Local Search & Protect Your Reputation"
@@ -362,7 +366,7 @@ export default function HomePage() {
       {/* Why Partner with Us section */}
       <div className="relative overflow-hidden py-24 sm:py-32">
         <div className="absolute left-1/2 top-0 -translate-x-1/2 blur-3xl opacity-30 pointer-events-none">
-          <div className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-indigo-300 to-purple-200 -rotate-[30deg]"></div>
+          <div className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-gold-300 to-purple-200 -rotate-[30deg]"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -371,7 +375,7 @@ export default function HomePage() {
             <div className="max-w-xl">
               <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
                 Why Partner
-                <span className="block text-indigo-600 font-semibold mt-1">with Us?</span>
+                <span className="block text-gold-600 font-semibold mt-1">with Us?</span>
               </h2>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Just like the old alchemists who turned base metals into gold, we take ordinary digital efforts and transform them into powerful, results-driven strategies. It's not magic—it's expertise, creativity, and a passion for seeing you thrive online.
@@ -379,7 +383,7 @@ export default function HomePage() {
               <div className="mt-8">
                 <Link
                   href="/about"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-full text-sm font-medium hover:bg-indigo-500 transition-all duration-200 group"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-gold-600 text-white rounded-full text-sm font-medium hover:bg-gold-500 transition-all duration-200 group"
                 >
                   About Us
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -393,23 +397,23 @@ export default function HomePage() {
                 {/* Main Container */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   {/* Central Element */}
-                  <div className="relative w-48 h-48 bg-gradient-to-br from-indigo-100 to-white rounded-2xl shadow-xl flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
-                    <div className="absolute inset-2 border-2 border-indigo-100 rounded-xl"></div>
-                    <div className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">WA</div>
+                  <div className="relative w-48 h-48 bg-gradient-to-br from-gold-100 to-white rounded-2xl shadow-xl flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                    <div className="absolute inset-2 border-2 border-gold-100 rounded-xl"></div>
+                    <div className="text-2xl font-bold bg-gradient-to-r from-gold-600 to-purple-600 bg-clip-text text-transparent">WA</div>
                   </div>
 
                   {/* Floating Elements */}
-                  <div className="absolute top-1/4 -left-4 w-20 h-20 bg-gradient-to-br from-purple-100 to-indigo-50 rounded-lg shadow-lg transform rotate-12 animate-float-slow"></div>
-                  <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-50 rounded-full animate-float-slow delay-150"></div>
+                  <div className="absolute top-1/4 -left-4 w-20 h-20 bg-gradient-to-br from-purple-100 to-gold-50 rounded-lg shadow-lg transform rotate-12 animate-float-slow"></div>
+                  <div className="absolute bottom-1/4 -right-4 w-16 h-16 bg-gradient-to-br from-gold-100 to-purple-50 rounded-full animate-float-slow delay-150"></div>
 
                   {/* Connection Lines */}
-                  <div className="absolute left-0 top-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-200 to-transparent transform -rotate-45"></div>
-                  <div className="absolute left-0 top-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-indigo-200 to-transparent transform rotate-45"></div>
+                  <div className="absolute left-0 top-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-200 to-transparent transform -rotate-45"></div>
+                  <div className="absolute left-0 top-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-200 to-transparent transform rotate-45"></div>
 
                   {/* Data Points */}
-                  <div className="absolute top-0 left-1/4 w-3 h-3 bg-indigo-400 rounded-full animate-pulse"></div>
+                  <div className="absolute top-0 left-1/4 w-3 h-3 bg-gold-400 rounded-full animate-pulse"></div>
                   <div className="absolute bottom-0 right-1/4 w-3 h-3 bg-purple-400 rounded-full animate-pulse delay-75"></div>
-                  <div className="absolute top-1/4 right-0 w-3 h-3 bg-indigo-300 rounded-full animate-pulse delay-150"></div>
+                  <div className="absolute top-1/4 right-0 w-3 h-3 bg-gold-300 rounded-full animate-pulse delay-150"></div>
                   <div className="absolute bottom-1/4 left-0 w-3 h-3 bg-purple-300 rounded-full animate-pulse delay-225"></div>
                 </div>
               </div>
@@ -429,7 +433,7 @@ export default function HomePage() {
               backgroundSize: '32px 32px'
             }}></div>
             {/* Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-transparent to-purple-900/30"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-gold-900/30 via-transparent to-purple-900/30"></div>
           </div>
         </div>
 
@@ -438,7 +442,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-medium tracking-tight text-white sm:text-4xl">
               Real Results,
-              <span className="block text-indigo-400 mt-1">Real Stories</span>
+              <span className="block text-gold-400 mt-1">Real Stories</span>
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
               We're proud to have helped businesses of all sizes discover their digital potential.
@@ -479,7 +483,7 @@ export default function HomePage() {
               <div className="space-y-4">
                 <h2 className="text-4xl font-semibold tracking-tight text-gray-900">
                   Ready to Transform
-                  <span className="block text-indigo-600">Your Marketing?</span>
+                  <span className="block text-gold-600">Your Marketing?</span>
                 </h2>
                 <p className="text-2xl font-medium text-gray-900">Book Your FREE Consultation Now</p>
               </div>
@@ -523,8 +527,8 @@ export default function HomePage() {
             </div>
 
             {/* Bottom Left Diamond */}
-            <div className="absolute bottom-32 left-[15%] w-20 h-20 border border-indigo-200/50 transform rotate-45 animate-float">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-50 to-transparent" />
+            <div className="absolute bottom-32 left-[15%] w-20 h-20 border border-gold-200/50 transform rotate-45 animate-float">
+              <div className="absolute inset-0 bg-gradient-to-br from-gold-50 to-transparent" />
             </div>
 
             {/* Bottom Right Square */}
@@ -535,7 +539,7 @@ export default function HomePage() {
             {/* Center Decorative Elements */}
             <div className="absolute top-1/2 left-[2%] w-2 h-2 bg-purple-200 rounded-full animate-pulse" />
             <div className="absolute top-[40%] right-[3%] w-3 h-3 bg-blue-200 rounded-full animate-pulse delay-150" />
-            <div className="absolute bottom-[35%] left-[7%] w-2 h-2 bg-indigo-200 rounded-full animate-pulse delay-300" />
+            <div className="absolute bottom-[35%] left-[7%] w-2 h-2 bg-gold-200 rounded-full animate-pulse delay-300" />
           </div>
           
           {/* Subtle Grid */}
@@ -589,9 +593,9 @@ export default function HomePage() {
       <div className="relative bg-gradient-to-b from-white to-gray-50 py-24 sm:py-32 overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute inset-0">
-          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-right skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
-          <div className="absolute -left-8 top-full w-96 h-96 -translate-y-1/2 bg-indigo-50 opacity-50 blur-3xl"></div>
-          <div className="absolute -right-8 bottom-full w-96 h-96 translate-y-1/2 bg-indigo-50 opacity-50 blur-3xl"></div>
+          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-right skew-x-[-30deg] bg-white shadow-xl shadow-gold-600/10 ring-1 ring-gold-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+          <div className="absolute -left-8 top-full w-96 h-96 -translate-y-1/2 bg-gold-50 opacity-50 blur-3xl"></div>
+          <div className="absolute -right-8 bottom-full w-96 h-96 translate-y-1/2 bg-gold-50 opacity-50 blur-3xl"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -599,7 +603,7 @@ export default function HomePage() {
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl">
               Latest from Our
-              <span className="block text-indigo-600 mt-1">Digital Alchemy Lab</span>
+              <span className="block text-gold-600 mt-1">Digital Alchemy Lab</span>
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Discover insights, strategies, and success stories that can transform your digital presence
@@ -630,7 +634,7 @@ export default function HomePage() {
                 </div>
               </div>
               <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                <Link href="/blog/data-driven-marketing-strategies" className="hover:text-indigo-300 transition-colors">
+                <Link href="/blog/data-driven-marketing-strategies" className="hover:text-gold-300 transition-colors">
                   <span className="absolute inset-0"></span>
                   Data-Driven Marketing Strategies for 2024
                 </Link>
@@ -658,7 +662,7 @@ export default function HomePage() {
                 </div>
               </div>
               <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                <Link href="/blog/seo-best-practices" className="hover:text-indigo-300 transition-colors">
+                <Link href="/blog/seo-best-practices" className="hover:text-gold-300 transition-colors">
                   <span className="absolute inset-0"></span>
                   SEO Best Practices That Actually Work in 2024
                 </Link>
@@ -686,7 +690,7 @@ export default function HomePage() {
                 </div>
               </div>
               <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
-                <Link href="/blog/social-media-engagement" className="hover:text-indigo-300 transition-colors">
+                <Link href="/blog/social-media-engagement" className="hover:text-gold-300 transition-colors">
                   <span className="absolute inset-0"></span>
                   Boost Your Social Media Engagement with AI
                 </Link>
@@ -698,7 +702,7 @@ export default function HomePage() {
           <div className="mt-16 text-center">
             <Link
               href="/blog"
-              className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-8 py-4 text-base font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-all duration-200 group"
+              className="inline-flex items-center gap-2 rounded-full bg-gold-600 px-8 py-4 text-base font-semibold text-white shadow-sm hover:bg-gold-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-600 transition-all duration-200 group"
             >
               View All Posts
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -708,7 +712,7 @@ export default function HomePage() {
       </div>
 
       {/* Newsletter Section */}
-      <div className="relative isolate overflow-hidden bg-gradient-to-b from-indigo-50/30 to-white py-24 sm:py-32">
+      <div className="relative isolate overflow-hidden bg-gradient-to-b from-gold-50/30 to-white py-24 sm:py-32">
         {/* Decorative Elements */}
         <div className="absolute inset-0 -z-10">
           {/* Background Pattern */}
@@ -718,8 +722,8 @@ export default function HomePage() {
           }}></div>
           
           {/* Gradient Blobs */}
-          <div className="absolute -left-32 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-indigo-50 opacity-40 blur-3xl"></div>
-          <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-indigo-50 opacity-30 blur-3xl"></div>
+          <div className="absolute -left-32 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-gold-50 opacity-40 blur-3xl"></div>
+          <div className="absolute -right-32 bottom-0 h-96 w-96 rounded-full bg-gold-50 opacity-30 blur-3xl"></div>
         </div>
 
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -730,7 +734,7 @@ export default function HomePage() {
               <div className="relative px-8 py-12 lg:px-12 lg:py-16">
                 {/* Decorative Elements */}
                 <div className="absolute right-0 top-0 -ml-12 -mt-12 h-20 w-20 rotate-6">
-                  <svg className="h-full w-full text-indigo-600/10" viewBox="0 0 24 24" fill="currentColor">
+                  <svg className="h-full w-full text-gold-600/10" viewBox="0 0 24 24" fill="currentColor">
                     <path d="M21.721 12.752a9.711 9.711 0 00-.945-5.003 12.754 12.754 0 01-4.339 2.708 18.991 18.991 0 01-.214 4.772 17.165 17.165 0 005.498-2.477zM14.634 15.55a17.324 17.324 0 00.332-4.647c-.952.227-1.945.347-2.966.347-1.021 0-2.014-.12-2.966-.347a17.515 17.515 0 00.332 4.647 17.385 17.385 0 005.268 0zM9.772 17.119a18.963 18.963 0 004.456 0A17.182 17.182 0 0112 21.724a17.18 17.18 0 01-2.228-4.605zM7.777 15.23a18.87 18.87 0 01-.214-4.774 12.753 12.753 0 01-4.34-2.708 9.711 9.711 0 00-.944 5.003 17.165 17.165 0 005.498 2.477zM21.356 14.752a9.765 9.765 0 01-7.478 6.817 18.64 18.64 0 001.988-4.718 18.627 18.627 0 005.49-2.098zM2.644 14.752c1.682.971 3.53 1.688 5.49 2.099a18.64 18.64 0 001.988 4.718 9.765 9.765 0 01-7.478-6.816zM13.878 2.43a9.755 9.755 0 016.116 3.986 11.267 11.267 0 01-3.746 2.504 18.63 18.63 0 00-2.37-6.49zM12 2.276a17.152 17.152 0 012.805 7.121c-.897.23-1.837.353-2.805.353-.968 0-1.908-.122-2.805-.353A17.151 17.151 0 0112 2.276zM10.122 2.43a18.629 18.629 0 00-2.37 6.49 11.266 11.266 0 01-3.746-2.504 9.754 9.754 0 016.116-3.985z" />
                   </svg>
                 </div>
@@ -738,7 +742,7 @@ export default function HomePage() {
                 <div className="mx-auto max-w-xl lg:mx-0">
                   <h2 className="text-3xl font-medium tracking-tight text-gray-900 sm:text-4xl animate-slide-up">
                     Let's Keep the
-                    <span className="block text-indigo-600 mt-1">Conversation Going</span>
+                    <span className="block text-gold-600 mt-1">Conversation Going</span>
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-gray-600 animate-slide-up" style={{animationDelay: '100ms'}}>
                     Not quite ready to chat? Sign up for our newsletter to get fresh tips on digital marketing, promos, and more—all delivered straight to your inbox.
@@ -750,15 +754,15 @@ export default function HomePage() {
                   {/* Trust Indicators */}
                   <div className="mt-8 flex items-center gap-x-6 text-sm leading-6 text-gray-500 animate-slide-up" style={{animationDelay: '300ms'}}>
                     <div className="flex items-center gap-x-2">
-                      <svg className="h-5 w-5 text-indigo-500" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="h-5 w-5 text-gold-500" viewBox="0 0 24 24" fill="currentColor">
                         <path fillRule="evenodd" d="M12 1.5a5.25 5.25 0 00-5.25 5.25v3a3 3 0 00-3 3v6.75a3 3 0 003 3h10.5a3 3 0 003-3v-6.75a3 3 0 00-3-3v-3c0-2.9-2.35-5.25-5.25-5.25zm3.75 8.25v-3a3.75 3.75 0 10-7.5 0v3h7.5z" clipRule="evenodd" />
                       </svg>
                       <span>We respect your privacy</span>
                     </div>
                     <div className="flex items-center gap-x-2">
-                      <svg className="h-5 w-5 text-indigo-500" viewBox="0 0 24 24" fill="currentColor">
+                      <svg className="h-5 w-5 text-gold-500" viewBox="0 0 24 24" fill="currentColor">
                         <path d="M10.464 8.746c.227-.18.497-.311.786-.394v2.795a2.252 2.252 0 01-.786-.393c-.394-.313-.546-.681-.546-1.004 0-.323.152-.691.546-1.004zM12.75 15.662v-2.824c.347.085.664.228.921.421.427.32.579.686.579.991 0 .305-.152.671-.579.991a2.534 2.534 0 01-.921.42z" />
-                        <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v.816a3.836 3.836 0 00-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 01-.921-.421l-.879-.66a.75.75 0 00-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 001.5 0v-.81a4.124 4.124 0 001.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.191a4.122 4.122 0 00-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 00.933-1.175l-.415-.33a3.836 3.836 0 00-1.719-.755V6z" clipRule="evenodd" />
+                        <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zM12.75 6a.75.75 0 00-1.5 0v.816a3.836 3.836 0 00-1.72.756c-.712.566-1.112 1.35-1.112 2.178 0 .829.4 1.612 1.113 2.178.502.4 1.102.647 1.719.756v2.978a2.536 2.536 0 01-.921-.421l-.879-.66a.75.75 0 00-.9 1.2l.879.66c.533.4 1.169.645 1.821.75V18a.75.75 0 001.5 0v-.81a4.124 4.124 0 001.821-.749c.745-.559 1.179-1.344 1.179-2.191 0-.847-.434-1.632-1.179-2.179a4.122 4.122 0 00-1.821-.75V8.354c.29.082.559.213.786.393l.415.33a.75.75 0 00.933-1.175l-.415-.33a3.836 3.836 0 00-1.719-.755V6z" clipRule="evenodd" />
                       </svg>
                       <span>Unsubscribe anytime</span>
                     </div>
@@ -768,22 +772,22 @@ export default function HomePage() {
 
               {/* Right Column - Illustration */}
               <div className="relative hidden lg:block">
-                <div className="absolute inset-0 bg-gradient-to-bl from-indigo-50 to-white/90"></div>
+                <div className="absolute inset-0 bg-gradient-to-bl from-gold-50 to-white/90"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   {/* Email Icon */}
                   <div className="relative w-48 h-48 transform hover:scale-105 transition-transform duration-300 animate-scale-up">
-                    <div className="absolute inset-0 bg-indigo-100/50 rounded-3xl rotate-6"></div>
+                    <div className="absolute inset-0 bg-gold-100/50 rounded-3xl rotate-6"></div>
                     <div className="absolute inset-0 bg-white rounded-2xl shadow-sm flex items-center justify-center">
-                      <svg className="w-24 h-24 text-indigo-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                      <svg className="w-24 h-24 text-gold-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                       </svg>
                     </div>
                   </div>
 
                   {/* Floating Elements */}
-                  <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-indigo-100/60 rounded-full animate-float-slow"></div>
-                  <div className="absolute bottom-1/4 right-1/4 w-12 h-12 bg-indigo-50 rounded-lg rotate-12 animate-float"></div>
-                  <div className="absolute top-1/3 right-1/3 w-8 h-8 bg-indigo-100/40 rounded-full animate-float-slower"></div>
+                  <div className="absolute top-1/4 left-1/4 w-16 h-16 bg-gold-100/60 rounded-full animate-float-slow"></div>
+                  <div className="absolute bottom-1/4 right-1/4 w-12 h-12 bg-gold-50 rounded-lg rotate-12 animate-float"></div>
+                  <div className="absolute top-1/3 right-1/3 w-8 h-8 bg-gold-100/40 rounded-full animate-float-slower"></div>
                 </div>
               </div>
             </div>

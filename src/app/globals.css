@@ -89,18 +89,21 @@
 }
 
 :root {
-  --bg-rich-black: #121212;
-  --bg-rich-dark: #1a1a1a;
-  --color-gold-primary: #FFBA00;
-  --color-gold-light: #FFD700;
-  --color-gold-dark: #B8860B;
+  --background: #0D0D0D;
+  --foreground: #EDEDED;
+  --gold: #FFBA00;
+  --gold-light: #FFD466;
+  --gold-dark: #CC9500;
+  --rich-dark: #161616;
+  --rich-gray: #1E1E1E;
   --font-serif: 'Cormorant Garamond', serif;
-  --font-sans: var(--font-lato), sans-serif;
+  --font-sans: var(--font-geist-sans), sans-serif;
+  --font-mono: var(--font-geist-mono), monospace;
 }
 
 body {
-  background-color: var(--bg-rich-black);
-  color: #fff;
+  color: var(--foreground);
+  background: var(--background);
   font-family: var(--font-serif);
   font-weight: 300;
   letter-spacing: 0.02em;
@@ -156,11 +159,11 @@ p, a, li, span {
 
 /* Custom text styles */
 .gold-text {
-  color: var(--color-gold-primary);
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-gold-400 to-gold-600;
 }
 
 .gold-gradient-text {
-  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold-primary) 50%, var(--color-gold-dark) 100%);
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold) 50%, var(--gold-dark) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -189,14 +192,14 @@ p, a, li, span {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--bg-rich-dark);
+  background-color: var(--rich-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--color-gold-dark);
+  background-color: var(--gold-dark);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-gold-primary);
+  background-color: var(--gold);
 }

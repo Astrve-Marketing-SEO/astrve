@@ -18,18 +18,21 @@ export default function HomePage() {
     <PageLayout>
       {/* Hero section */}
       <div className="relative isolate px-6 pt-24 lg:pt-28 font-serif bg-rich-black">
-        {/* Background pattern */}
+        {/* Background pattern - reduced opacity */}
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-gold-300 to-gold-200 opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-gold-300 to-gold-200 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
         </div>
+
+        {/* Darkening overlay */}
+        <div className="absolute inset-0 bg-rich-black/80 -z-10"></div>
 
         <div className="mx-auto max-w-7xl">
           {/* Hero Section */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
             {/* Left column - Text content */}
-            <div>
+            <div className="relative z-10">
               {/* Badge with improved contrast */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rich-dark text-foreground text-sm font-medium mb-6 border border-gold-500/30">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-rich-dark/90 text-foreground text-sm font-medium mb-6 border border-gold-500/30 shadow-lg">
                 <span className="flex-1 font-sans">Data-Driven Marketing Agency</span>
                 <div className="w-px h-4 bg-gold-400"></div>
                 <span className="text-gold-400 font-sans font-semibold">98% Client Satisfaction</span>
@@ -37,8 +40,8 @@ export default function HomePage() {
               
               {/* Heading with improved contrast */}
               <h1 className="relative space-y-3 font-serif">
-                <div className="absolute -left-8 -top-8 w-24 h-24 bg-gold-100 rounded-full blur-2xl opacity-40"></div>
-                <div className="absolute right-8 bottom-8 w-32 h-32 bg-gold-50 rounded-full blur-3xl opacity-40"></div>
+                <div className="absolute -left-8 -top-8 w-24 h-24 bg-gold-100 rounded-full blur-2xl opacity-20"></div>
+                <div className="absolute right-8 bottom-8 w-32 h-32 bg-gold-50 rounded-full blur-3xl opacity-20"></div>
                 <div className="relative">
                   <span className="text-3xl lg:text-5xl font-medium tracking-tight text-foreground drop-shadow-sm">Stop Guessing,</span>
                 </div>
@@ -70,7 +73,7 @@ export default function HomePage() {
               
               {/* Buttons with improved contrast */}
               <div className="relative mt-10 flex flex-wrap gap-x-6 gap-y-4">
-                <div className="absolute -left-4 top-1/2 w-20 h-20 bg-gold-300/20 rounded-full blur-2xl opacity-60"></div>
+                <div className="absolute -left-4 top-1/2 w-20 h-20 bg-gold-300/20 rounded-full blur-2xl opacity-30"></div>
                 <Link
                   href="/services"
                   className="relative rounded-full bg-gradient-to-r from-gold-500 to-gold-600 px-8 py-4 text-base font-semibold text-rich-black shadow-lg hover:shadow-gold-500/20 hover:from-gold-400 hover:to-gold-500 transition-all duration-200 flex items-center gap-2 group font-serif border border-gold-400"
@@ -80,7 +83,7 @@ export default function HomePage() {
                 </Link>
                 <Link
                   href="/pricing"
-                  className="relative rounded-full px-8 py-4 text-base font-semibold shadow-lg hover:shadow-gold-500/20 transition-all duration-200 flex items-center gap-2 bg-rich-dark backdrop-blur-sm group border border-gold-300/50 font-serif"
+                  className="relative rounded-full px-8 py-4 text-base font-semibold shadow-lg hover:shadow-gold-500/20 transition-all duration-200 flex items-center gap-2 bg-rich-dark/90 backdrop-blur-sm group border border-gold-300/50 font-serif"
                 >
                   <span className="text-gold-300 font-bold">Pricing</span>
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 text-gold-300" />
@@ -89,7 +92,7 @@ export default function HomePage() {
 
               {/* Stats with improved contrast */}
               <div className="relative mt-16 grid grid-cols-3 gap-6 py-8 border-y border-gold-500/20 font-sans">
-                <div className="absolute inset-0 bg-gradient-to-r from-gold-500/10 via-transparent to-gold-500/10 opacity-50 blur-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-gold-500/5 via-transparent to-gold-500/5 opacity-50 blur-xl"></div>
                 <div>
                   <div className="text-2xl font-bold text-foreground">250%</div>
                   <div className="text-sm text-gray-300">Average ROI</div>
@@ -106,19 +109,19 @@ export default function HomePage() {
             </div>
 
             {/* Right column - Interactive visualization */}
-            <div className="relative lg:ml-auto">
-              <div className="absolute inset-0 -m-8 rounded-3xl bg-gradient-to-tr from-gold-300/30 to-transparent opacity-40 blur-2xl"></div>
+            <div className="relative lg:ml-auto z-10">
+              <div className="absolute inset-0 -m-8 rounded-3xl bg-gradient-to-tr from-gold-300/20 to-transparent opacity-30 blur-2xl"></div>
               <div className="relative">
-                <div className="relative overflow-hidden rounded-2xl bg-rich-dark p-8 shadow-xl border border-gold-500/20">
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-gold-400/20 to-gold-300/10 opacity-30"></div>
-                  <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.5))] -z-10"></div>
+                <div className="relative overflow-hidden rounded-2xl bg-rich-dark/90 p-8 shadow-xl border border-gold-500/20">
+                  <div className="absolute -inset-0.5 bg-gradient-to-br from-gold-400/15 to-gold-300/5 opacity-30"></div>
+                  <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,#fff,rgba(255,255,255,0.5))] opacity-10 -z-10"></div>
                   
                   <div className="relative grid grid-cols-6 gap-4 font-sans">
                     {/* Dashboard header with improved contrast */}
-                    <div className="col-span-6 overflow-hidden rounded-lg bg-rich-gray p-3 shadow-sm border border-gold-500/20">
+                    <div className="col-span-6 overflow-hidden rounded-lg bg-rich-gray/90 p-3 shadow-sm border border-gold-500/20">
                       <div className="flex justify-between items-center">
                         <div className="flex items-center gap-3">
-                          <div className="h-10 w-10 rounded-full bg-gold-100 flex items-center justify-center">
+                          <div className="h-10 w-10 rounded-full bg-gold-100/90 flex items-center justify-center">
                             <BarChart3 className="h-5 w-5 text-gold-700" />
                           </div>
                           <div>
@@ -134,7 +137,7 @@ export default function HomePage() {
                     </div>
                     
                     {/* Middle section - Performance graph */}
-                    <div className="col-span-4 h-40 overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
+                    <div className="col-span-4 h-40 overflow-hidden rounded-lg bg-rich-dark/90 p-3 shadow-sm border border-gold-500/10">
                       <div className="flex justify-between items-center mb-2">
                         <div className="text-sm font-medium text-gray-300">Conversion Rate</div>
                         <div className="text-sm font-semibold text-gold-400">+32.5% MoM</div>
@@ -170,24 +173,24 @@ export default function HomePage() {
                     
                     {/* Side metrics */}
                     <div className="col-span-2 grid grid-rows-2 gap-4">
-                      <div className="overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
+                      <div className="overflow-hidden rounded-lg bg-rich-dark/90 p-3 shadow-sm border border-gold-500/10">
                         <div className="flex items-center justify-between">
                           <div>
                             <div className="text-sm font-medium text-gray-300">Engagement</div>
                             <div className="text-lg font-semibold text-foreground">87.4%</div>
                           </div>
-                          <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
+                          <div className="h-8 w-8 rounded-full bg-green-100/80 flex items-center justify-center">
                             <ArrowUpRight className="h-4 w-4 text-green-600" />
                           </div>
                         </div>
                       </div>
-                      <div className="overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
+                      <div className="overflow-hidden rounded-lg bg-rich-dark/90 p-3 shadow-sm border border-gold-500/10">
                         <div className="flex items-center justify-between">
                           <div>
                             <div className="text-sm font-medium text-gray-300">Bounce Rate</div>
                             <div className="text-lg font-semibold text-foreground">12.8%</div>
                           </div>
-                          <div className="h-8 w-8 rounded-full bg-green-100 flex items-center justify-center">
+                          <div className="h-8 w-8 rounded-full bg-green-100/80 flex items-center justify-center">
                             <ArrowUpRight className="h-4 w-4 text-green-600 rotate-180" />
                           </div>
                         </div>
@@ -195,7 +198,7 @@ export default function HomePage() {
                     </div>
                     
                     {/* Bottom row - Channel distribution */}
-                    <div className="col-span-3 overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
+                    <div className="col-span-3 overflow-hidden rounded-lg bg-rich-dark/90 p-3 shadow-sm border border-gold-500/10">
                       <div className="text-sm font-medium text-gray-300 mb-2">Channel Mix</div>
                       <div className="space-y-2">
                         <div>
@@ -203,7 +206,7 @@ export default function HomePage() {
                             <span className="text-gray-300">Organic</span>
                             <span className="font-medium text-foreground">42%</span>
                           </div>
-                          <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden">
+                          <div className="h-1.5 w-full bg-rich-gray/90 rounded-full overflow-hidden">
                             <div className="h-full bg-gold-500 rounded-full" style={{ width: '42%' }}></div>
                           </div>
                         </div>
@@ -212,7 +215,7 @@ export default function HomePage() {
                             <span className="text-gray-300">Social</span>
                             <span className="font-medium text-foreground">28%</span>
                           </div>
-                          <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden">
+                          <div className="h-1.5 w-full bg-rich-gray/90 rounded-full overflow-hidden">
                             <div className="h-full bg-gold-400 rounded-full" style={{ width: '28%' }}></div>
                           </div>
                         </div>
@@ -220,20 +223,20 @@ export default function HomePage() {
                     </div>
                     
                     {/* ROI calculator */}
-                    <div className="col-span-3 overflow-hidden rounded-lg bg-rich-dark p-3 shadow-sm border border-gold-500/10">
+                    <div className="col-span-3 overflow-hidden rounded-lg bg-rich-dark/90 p-3 shadow-sm border border-gold-500/10">
                       <div className="text-sm font-medium text-gray-300 mb-1">ROI</div>
                       <div className="flex items-center justify-between">
                         <div className="text-xs text-gray-400">Input</div>
                         <div className="text-xs font-medium text-foreground">$10k</div>
                       </div>
-                      <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden my-1">
+                      <div className="h-1.5 w-full bg-rich-gray/90 rounded-full overflow-hidden my-1">
                         <div className="h-full bg-gold-500 rounded-full" style={{ width: '100%' }}></div>
                       </div>
                       <div className="flex items-center justify-between">
                         <div className="text-xs text-gray-400">Output</div>
                         <div className="text-xs font-medium text-gold-400">$35k</div>
                       </div>
-                      <div className="h-1.5 w-full bg-rich-gray rounded-full overflow-hidden my-1">
+                      <div className="h-1.5 w-full bg-rich-gray/90 rounded-full overflow-hidden my-1">
                         <div className="h-full bg-gold-400 rounded-full" style={{ width: '100%' }}></div>
                       </div>
                     </div>
@@ -244,9 +247,9 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Background pattern */}
+        {/* Background pattern - reduced opacity */}
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]">
-          <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-gold-300 to-gold-200 opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
+          <div className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-gold-300 to-gold-200 opacity-20 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
         </div>
       </div>
 

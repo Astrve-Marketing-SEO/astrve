@@ -89,21 +89,31 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --bg-rich-black: #121212;
+  --bg-rich-dark: #1a1a1a;
+  --color-gold-primary: #FFBA00;
+  --color-gold-light: #FFD700;
+  --color-gold-dark: #B8860B;
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: var(--font-lato), sans-serif;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-rich-black);
+  color: #fff;
+  font-family: var(--font-serif);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+
+p, a, li, span {
+  font-family: var(--font-serif);
 }
 
 @keyframes float {
@@ -120,4 +130,73 @@ body {
 
 .animate-float-slow {
   animation: float 4s ease-in-out infinite;
+}
+
+/* Custom button styles */
+.gold-btn {
+  @apply bg-gradient-to-r from-gold-600 to-gold-400 text-rich-black hover:from-gold-500 hover:to-gold-300 transition-all;
+  font-family: var(--font-serif);
+  letter-spacing: 0.05em;
+}
+
+.dark-btn {
+  @apply bg-rich-gray text-gold-400 border border-gold-500/30 hover:border-gold-400 transition-all;
+  font-family: var(--font-serif);
+  letter-spacing: 0.05em;
+}
+
+/* Custom section styles */
+.dark-section {
+  @apply bg-rich-dark text-foreground;
+}
+
+.darker-section {
+  @apply bg-rich-black text-foreground;
+}
+
+/* Custom text styles */
+.gold-text {
+  color: var(--color-gold-primary);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold-primary) 50%, var(--color-gold-dark) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.gold-heading {
+  @apply font-bold gold-text;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+}
+
+/* Font Classes */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Custom Scroll Bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-rich-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-gold-dark);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-gold-primary);
 }

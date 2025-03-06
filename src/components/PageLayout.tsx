@@ -7,7 +7,7 @@ export default function PageLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-white min-h-screen flex flex-col">
+    <div className="bg-rich-black min-h-screen flex flex-col text-foreground">
       <Navbar />
       <main className="flex-grow">
         {children}

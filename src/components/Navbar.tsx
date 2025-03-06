@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
@@ -34,9 +34,34 @@ const navigation = [
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const dropdownRefs = useRef<Map<string, HTMLDivElement>>(new Map());
 
-  const handleDropdownToggle = (name: string) => {
+  const handleDropdownToggle = (name: string, event: React.MouseEvent) => {
+    event.stopPropagation();
     setActiveDropdown(activeDropdown === name ? null : name);
+  };
+
+  // Handle clicking outside to close the dropdown
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (activeDropdown && !dropdownRefs.current.get(activeDropdown)?.contains(event.target as Node)) {
+        setActiveDropdown(null);
+      }
+    }
+    
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [activeDropdown]);
+
+  // Register ref for dropdown
+  const registerDropdownRef = (name: string, element: HTMLDivElement | null) => {
+    if (element) {
+      dropdownRefs.current.set(name, element);
+    } else {
+      dropdownRefs.current.delete(name);
+    }
   };
 
   return (
@@ -76,15 +101,21 @@ export default function Navbar() {
           {navigation.map((item) => (
             <div key={item.name} className="relative group">
               {item.children ? (
-                <>
-                  <button
-                    onClick={() => handleDropdownToggle(item.name)}
-                    className="flex items-center text-sm font-serif text-gold-300 hover:text-gold-400 transition-colors tracking-wider"
+                <div className="flex items-center" ref={(element) => registerDropdownRef(`desktop-${item.name}`, element)}>
+                  <Link
+                    href={item.href}
+                    className="text-sm font-serif text-gold-300 hover:text-gold-400 transition-colors tracking-wider"
                   >
                     {item.name}
+                  </Link>
+                  <button
+                    onClick={(event) => handleDropdownToggle(`desktop-${item.name}`, event)}
+                    className="ml-1 p-1 flex items-center text-gold-300 hover:text-gold-400"
+                    aria-label="Toggle dropdown"
+                  >
                     <svg
-                      className={`ml-1 h-4 w-4 transition-transform ${
-                        activeDropdown === item.name ? 'rotate-180' : ''
+                      className={`h-4 w-4 transition-transform ${
+                        activeDropdown === `desktop-${item.name}` ? 'rotate-180' : ''
                       }`}
                       fill="none"
                       viewBox="0 0 24 24"
@@ -98,14 +129,15 @@ export default function Navbar() {
                       />
                     </svg>
                   </button>
-                  {activeDropdown === item.name && (
-                    <div className="absolute left-0 mt-2 w-56 rounded-md bg-rich-dark shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-50">
+                  {activeDropdown === `desktop-${item.name}` && (
+                    <div className="absolute left-0 top-full mt-2 w-64 rounded-md bg-rich-dark shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none z-[100]">
                       <div className="py-1">
                         {item.children.map((child) => (
                           <Link
                             key={child.name}
                             href={child.href}
                             className="block px-4 py-2 text-sm font-serif text-gold-300 hover:bg-rich-gray hover:text-gold-400 tracking-wider"
+                            onClick={() => setActiveDropdown(null)}
                           >
                             {child.name}
                           </Link>
@@ -113,7 +145,7 @@ export default function Navbar() {
                       </div>
                     </div>
                   )}
-                </>
+                </div>
               ) : (
                 <Link
                   href={item.href}
@@ -173,34 +205,46 @@ export default function Navbar() {
                   <div key={item.name}>
                     {item.children ? (
                       <>
-                        <button
-                          onClick={() => handleDropdownToggle(item.name)}
-                          className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-serif text-gold-300 hover:bg-rich-gray hover:text-gold-400 tracking-wider"
-                        >
-                          {item.name}
-                          <svg
-                            className={`h-5 w-5 flex-none transition-transform ${
-                              activeDropdown === item.name ? 'rotate-180' : ''
-                            }`}
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
+                        <div className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5" ref={(element) => registerDropdownRef(`mobile-${item.name}`, element)}>
+                          <Link
+                            href={item.href}
+                            className="text-base font-serif text-gold-300 hover:text-gold-400 tracking-wider"
+                            onClick={() => setMobileMenuOpen(false)}
                           >
-                            <path
-                              fillRule="evenodd"
-                              d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </button>
-                        {activeDropdown === item.name && (
+                            {item.name}
+                          </Link>
+                          <button
+                            onClick={(event) => handleDropdownToggle(`mobile-${item.name}`, event)}
+                            className="p-1 text-gold-300 hover:text-gold-400"
+                            aria-label="Toggle dropdown"
+                          >
+                            <svg
+                              className={`h-5 w-5 flex-none transition-transform ${
+                                activeDropdown === `mobile-${item.name}` ? 'rotate-180' : ''
+                              }`}
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              aria-hidden="true"
+                            >
+                              <path
+                                fillRule="evenodd"
+                                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                clipRule="evenodd"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                        {activeDropdown === `mobile-${item.name}` && (
                           <div className="mt-2 space-y-2 pl-7">
                             {item.children.map((child) => (
                               <Link
                                 key={child.name}
                                 href={child.href}
                                 className="block rounded-lg py-2 pl-3 pr-3.5 text-sm font-serif text-gold-300 hover:bg-rich-gray hover:text-gold-400 tracking-wider"
-                                onClick={() => setMobileMenuOpen(false)}
+                                onClick={() => {
+                                  setMobileMenuOpen(false);
+                                  setActiveDropdown(null);
+                                }}
                               >
                                 {child.name}
                               </Link>

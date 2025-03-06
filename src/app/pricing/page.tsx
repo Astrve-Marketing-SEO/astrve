@@ -7,7 +7,7 @@ const tiers = [
     name: 'Basic',
     id: 'tier-basic',
     href: '/contact',
-    priceMonthly: '$999',
+    priceMonthly: 'Custom Quote',
     description: 'Perfect for small businesses just starting their digital journey.',
     features: [
       'Custom website design',
@@ -24,7 +24,7 @@ const tiers = [
     name: 'Professional',
     id: 'tier-professional',
     href: '/contact',
-    priceMonthly: '$1,999',
+    priceMonthly: 'Custom Quote',
     description: 'Ideal for growing businesses seeking comprehensive digital presence.',
     features: [
       'Everything in Basic, plus:',
@@ -43,7 +43,7 @@ const tiers = [
     name: 'Enterprise',
     id: 'tier-enterprise',
     href: '/contact',
-    priceMonthly: 'Custom',
+    priceMonthly: 'Custom Quote',
     description: 'Custom solutions for large businesses with specific requirements.',
     features: [
       'Everything in Professional, plus:',
@@ -71,7 +71,7 @@ export default function PricingPage() {
         <div className="mx-auto max-w-7xl py-24 sm:py-32">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent sm:text-6xl">
-              Simple, Transparent Pricing
+              ROI So High, It's Basically Free
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Choose the perfect plan for your business needs. All plans include our core features and dedicated support.
@@ -90,7 +90,6 @@ export default function PricingPage() {
                 <p className="mt-4 text-sm leading-6 text-gray-600">{tier.description}</p>
                 <p className="mt-6 flex items-baseline gap-x-1">
                   <span className="text-4xl font-bold tracking-tight text-gray-900">{tier.priceMonthly}</span>
-                  {tier.name !== 'Enterprise' && <span className="text-sm font-semibold leading-6 text-gray-600">/project</span>}
                 </p>
                 <Link
                   href={tier.href}

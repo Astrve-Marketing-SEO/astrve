@@ -25,7 +25,7 @@ export default function ClientCalendly() {
       const calendlyWindow = window as CalendlyWindow;
       if (calendlyWindow.Calendly) {
         calendlyWindow.Calendly.initInlineWidget({
-          url: 'https://calendly.com/mcasmakeen/30min',
+          url: 'https://api.leadconnectorhq.com/widget/booking/U7Wzv9plr0yEjHTQv2cp',
           parentElement: document.getElementById('calendly-inline-widget'),
         });
       }
@@ -48,13 +48,20 @@ export default function ClientCalendly() {
   return (
     <>
       <Script
-        src="https://assets.calendly.com/assets/external/widget.js"
+        src="https://link.msgsndr.com/js/embed.js"
         strategy="lazyOnload"
         onLoad={() => {
           window.dispatchEvent(new Event('calendly-script-loaded'));
         }}
       />
-      <div id="calendly-inline-widget" style={{ minWidth: '100%', height: '800px' }} />
+      <div id="calendly-inline-widget" style={{ minWidth: '100%', height: '800px' }}>
+        <iframe 
+          src="https://api.leadconnectorhq.com/widget/booking/U7Wzv9plr0yEjHTQv2cp" 
+          style={{ width: '100%', border: 'none', overflow: 'hidden', height: '100%' }} 
+          scrolling="no" 
+          id="msgsndr-calendar">
+        </iframe>
+      </div>
     </>
   );
 }

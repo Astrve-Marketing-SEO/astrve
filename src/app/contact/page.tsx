@@ -31,14 +31,14 @@ export default function ContactPage() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-x-4">
                     <EnvelopeIcon className="h-6 w-6 text-indigo-600" />
-                    <a href="mailto:contact@website-alchemy.com" className="text-base text-gray-900 hover:text-indigo-600">
-                      contact@website-alchemy.com
+                    <a href="mailto:contact@astrve.com" className="text-base text-gray-900 hover:text-indigo-600">
+                      contact@astrve.com
                     </a>
                   </div>
                   <div className="flex items-center gap-x-4">
                     <PhoneIcon className="h-6 w-6 text-indigo-600" />
-                    <a href="tel:+15551234567" className="text-base text-gray-900 hover:text-indigo-600">
-                      (555) 123-4567
+                    <a href="tel:+14699075923" className="text-base text-gray-900 hover:text-indigo-600">
+                      (469) 907-5923
                     </a>
                   </div>
                 </div>
@@ -47,11 +47,11 @@ export default function ContactPage() {
                   <dl className="mt-3 space-y-1 text-base text-gray-600">
                     <div>
                       <dt className="font-semibold inline">Monday-Friday:</dt>
-                      <dd className="inline"> 9:00 AM - 6:00 PM PST</dd>
+                      <dd className="inline"> 9:00 AM - 6:00 PM CST</dd>
                     </div>
                     <div>
                       <dt className="font-semibold inline">Saturday:</dt>
-                      <dd className="inline"> By appointment</dd>
+                      <dd className="inline"> By appointment only</dd>
                     </div>
                     <div>
                       <dt className="font-semibold inline">Sunday:</dt>
@@ -62,89 +62,43 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <form className="mx-auto w-full max-w-xl lg:mx-0">
-              <div className="space-y-6">
-                <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                  <div>
-                    <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                      First name
-                    </label>
-                    <div className="mt-2.5">
-                      <input
-                        type="text"
-                        name="first-name"
-                        id="first-name"
-                        autoComplete="given-name"
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-gray-900">
-                      Last name
-                    </label>
-                    <div className="mt-2.5">
-                      <input
-                        type="text"
-                        name="last-name"
-                        id="last-name"
-                        autoComplete="family-name"
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Email
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      autoComplete="email"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Phone number
-                  </label>
-                  <div className="mt-2.5">
-                    <input
-                      type="tel"
-                      name="phone"
-                      id="phone"
-                      autoComplete="tel"
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
-                    Message
-                  </label>
-                  <div className="mt-2.5">
-                    <textarea
-                      name="message"
-                      id="message"
-                      rows={4}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    />
-                  </div>
-                </div>
-                <div className="flex justify-end">
-                  <button
-                    type="submit"
-                    className="rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-3 text-base font-semibold text-white shadow-lg hover:from-indigo-500 hover:to-purple-500 transition-all duration-200 hover:scale-105"
-                  >
-                    Send Message
-                  </button>
+            <div className="mx-auto w-full max-w-xl lg:mx-0">
+              <div className="bg-white/70 backdrop-blur-sm rounded-3xl shadow-lg p-6">
+                <h2 className="text-2xl font-bold tracking-tight mb-6 text-gray-900">Schedule a Consultation</h2>
+                <div className="w-full h-[600px] overflow-hidden">
+                  {/* Calendar Embed */}
+                  <iframe 
+                    src="https://api.leadconnectorhq.com/widget/booking/U7Wzv9plr0yEjHTQv2cp" 
+                    style={{ width: '100%', border: 'none', overflow: 'hidden', height: '100%' }} 
+                    scrolling="no" 
+                    id="msgsndr-calendar">
+                  </iframe>
+                  <script src="https://link.msgsndr.com/js/embed.js" type="text/javascript"></script>
                 </div>
               </div>
-            </form>
+            </div>
+          </div>
+        </div>
+
+        {/* Call to action section */}
+        <div className="mt-16 py-16 sm:mt-24 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-3xl">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <div className="mx-auto max-w-xl text-center">
+              <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Ready to Get Started?
+              </h2>
+              <p className="mt-4 text-lg text-indigo-100">
+                Our team is ready to help you achieve your business goals. Let's create something amazing together.
+              </p>
+              <div className="mt-8 flex items-center justify-center gap-x-6">
+                <a
+                  href="#"
+                  className="rounded-xl bg-white px-6 py-3 text-lg font-semibold text-indigo-600 shadow-sm hover:bg-indigo-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Book a Call
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

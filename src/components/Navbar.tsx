@@ -44,21 +44,19 @@ export default function Navbar() {
       {/* Top bar */}
       <div className="bg-gradient-to-r from-indigo-600 to-indigo-500 py-2 text-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-          <div className="text-indigo-50">Welcome to Website Alchemy</div>
+          <div className="text-indigo-50">Welcome to ASTRVE Marketing & SEO</div>
           <div className="flex items-center gap-6">
+            <div className="text-indigo-50 flex items-center gap-2">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:contact@astrve.com" className="hover:underline">contact@astrve.com</a>
+            </div>
             <div className="text-indigo-50 flex items-center gap-2">
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              +698 695 806
-            </div>
-            <div className="flex items-center gap-4">
-              {topBarLinks.map((link) => (
-                <a key={link.icon} href={link.href} className="text-indigo-50 hover:text-white transition-colors">
-                  <span className="sr-only">{link.name}</span>
-                  <i className={`fab fa-${link.icon}`}></i>
-                </a>
-              ))}
+              <a href="tel:+14699075923" className="hover:underline">(469) 907-5923</a>
             </div>
           </div>
         </div>
@@ -68,9 +66,8 @@ export default function Navbar() {
       <nav className="bg-white/80 backdrop-blur-sm border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-gradient-to-br from-indigo-600 to-indigo-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">WA</div>
-              <span className="text-xl font-bold bg-gradient-to-r from-indigo-600 to-indigo-500 bg-clip-text text-transparent">Website Alchemy</span>
+            <Link href="/" className="font-bold text-xl bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+              ASTRVE
             </Link>
           </div>
           <div className="flex lg:hidden">
